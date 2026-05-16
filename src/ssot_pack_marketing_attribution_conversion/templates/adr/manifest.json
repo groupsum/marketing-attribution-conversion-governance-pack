@@ -1,0 +1,38 @@
+[
+  {
+    "id": "adr:conversion-attribution-authority",
+    "number": 1001,
+    "slug": "conversion-attribution-authority",
+    "title": "Conversion Attribution Authority",
+    "filename": "ADR-1001-conversion-attribution-authority.yaml",
+    "target_path": ".ssot/adr/ADR-1001-conversion-attribution-authority.yaml",
+    "sha256": "3a7d9f0d0f8b409904d212d5daab63f0280b1615af2b57da757269efdf41f705",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-marketing-attribution-conversion",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  },
+  {
+    "id": "adr:click-id-and-server-conversion-boundary",
+    "number": 1002,
+    "slug": "click-id-and-server-conversion-boundary",
+    "title": "Click ID And Server Conversion Boundary",
+    "filename": "ADR-1002-click-id-and-server-conversion-boundary.yaml",
+    "target_path": ".ssot/adr/ADR-1002-click-id-and-server-conversion-boundary.yaml",
+    "sha256": "1ed65f37d96ef76f66190f743e7cb7cecb3db9b8ec84f899119c8673e1cc1273",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-marketing-attribution-conversion",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  }
+]

@@ -3,9 +3,9 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-registry-pack-template"
+name = "ssot-pack-marketing-attribution-conversion"
 version = "0.1.0"
-description = "Template repository for installable SSOT Registry ADR and SPEC governance packs."
+description = "Installable SSOT governance pack for attribution reporting, click IDs, tracking templates, offline conversions, conversion APIs, ECAPI, and ADMaP."
 readme = "README.md"
 requires-python = ">=3.10,<3.15"
 license = "Apache-2.0"
@@ -19,8 +19,7 @@ keywords = [
   "ssot-registry",
   "extension-pack",
   "governance-pack",
-  "template",
-  "governance",
+    "governance",
   "adr",
   "spec",
   "uv",
@@ -45,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-registry-pack-template"
-Repository = "https://github.com/groupsum/ssot-registry-pack-template"
-Issues = "https://github.com/groupsum/ssot-registry-pack-template/issues"
+Homepage = "https://github.com/groupsum/ssot-pack-marketing-attribution-conversion"
+Repository = "https://github.com/groupsum/ssot-pack-marketing-attribution-conversion"
+Issues = "https://github.com/groupsum/ssot-pack-marketing-attribution-conversion/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -56,9 +55,9 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
-"ssot_registry_pack_template" = ["metadata.json"]
-"ssot_registry_pack_template.templates.adr" = ["*.json", "*.yaml"]
-"ssot_registry_pack_template.templates.specs" = ["*.json", "*.yaml"]
+"ssot_pack_marketing_attribution_conversion" = ["metadata.json"]
+"ssot_pack_marketing_attribution_conversion.templates.adr" = ["*.json", "*.yaml"]
+"ssot_pack_marketing_attribution_conversion.templates.specs" = ["*.json", "*.yaml"]
 
 [dependency-groups]
 dev = [
