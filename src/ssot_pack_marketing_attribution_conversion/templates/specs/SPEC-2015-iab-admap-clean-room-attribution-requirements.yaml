@@ -1,0 +1,20 @@
+{
+  "id": "spc:iab-admap-clean-room-attribution-requirements",
+  "number": 2015,
+  "slug": "iab-admap-clean-room-attribution-requirements",
+  "title": "IAB ADMaP Clean Room Attribution Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:clean-room-attribution-protocol-policy"],
+  "primary_targets": ["IAB Tech Lab ADMaP", "IAB Data Clean Rooms guidance"],
+  "scope": {"governs": ["deterministic first-party matching", "PET workflow", "clean-room attribution outputs", "measurement evidence"], "excludes": ["direct vendor conversion uploads", "browser attribution reports"]},
+  "requirements": [
+    "Document clean-room parties, input datasets, matching keys, privacy controls, and attribution outputs.",
+    "Validate workflow evidence against selected ADMaP or data clean room requirements.",
+    "Record privacy-enhancing technology assumptions and limitations.",
+    "Keep clean-room evidence separate from conversion API evidence."
+  ],
+  "evidence_expectations": ["Clean-room workflow artifact", "Matching/output evidence", "Privacy-control review"]
+}

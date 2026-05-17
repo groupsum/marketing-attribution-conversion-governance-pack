@@ -1,0 +1,20 @@
+{
+  "id": "spc:mrc-measurement-quality-reference-requirements",
+  "number": 2018,
+  "slug": "mrc-measurement-quality-reference-requirements",
+  "title": "MRC Measurement Quality Reference Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:click-measurement-quality-policy"],
+  "primary_targets": ["Media Rating Council standards"],
+  "scope": {"governs": ["measurement quality references", "auditability", "accreditation-facing evidence expectations"], "excludes": ["specific vendor conversion APIs", "browser attribution API mechanics"]},
+  "requirements": [
+    "Document MRC measurement-quality references selected for downstream attribution evidence.",
+    "Capture auditability expectations and evidence ownership.",
+    "Record where MRC guidance is informative rather than a direct conformance target.",
+    "Keep quality-reference evidence separate from API payload validation."
+  ],
+  "evidence_expectations": ["Measurement quality checklist", "Auditability evidence", "Reference applicability note"]
+}

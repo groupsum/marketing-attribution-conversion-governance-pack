@@ -1,0 +1,32 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2002"
+number: 2002
+slug: "browser-attribution-target-requirements"
+title: "Browser Attribution Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for browser attribution measurement targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for browser attribution measurement targets.
+  
+  ## Requirements
+  
+  - W3C Attribution Reporting coverage must govern browser source registration, trigger registration, event-level reports, aggregatable reports, privacy budgets, report timing, and aggregation behavior.
+  - Browser attribution targets must remain separate from click ID capture and vendor server conversion APIs.
+  - Browser attribution reporting evidence must include registration and report artifacts when this target is represented in downstream templates.
+  - Adjacent advertising APIs or vendor conversion APIs must not be described as browser attribution targets unless they directly implement the selected browser attribution authority.
+  
+  ## Evidence Expectations
+  
+  - Target inventory for W3C Attribution Reporting.
+  - Template review showing downstream conformance coverage for browser attribution reporting.
+spec_kind: "governance"

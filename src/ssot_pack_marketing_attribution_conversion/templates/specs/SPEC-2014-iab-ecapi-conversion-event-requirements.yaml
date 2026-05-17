@@ -1,0 +1,20 @@
+{
+  "id": "spc:iab-ecapi-conversion-event-requirements",
+  "number": 2014,
+  "slug": "iab-ecapi-conversion-event-requirements",
+  "title": "IAB ECAPI Conversion Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:industry-conversion-event-protocol-policy"],
+  "primary_targets": ["IAB Tech Lab ECAPI"],
+  "scope": {"governs": ["standardized event fields", "conversion communication", "exchange evidence", "field mappings"], "excludes": ["vendor-specific conversion API payloads", "clean-room matching workflows"]},
+  "requirements": [
+    "Document ECAPI event and conversion fields represented downstream.",
+    "Validate field mappings before exchange.",
+    "Capture exchange evidence for accepted and rejected payloads.",
+    "Keep ECAPI conformance separate from vendor endpoint acceptance."
+  ],
+  "evidence_expectations": ["ECAPI payload fixture", "Exchange validation output", "Field mapping table"]
+}

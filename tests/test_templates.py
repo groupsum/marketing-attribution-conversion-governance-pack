@@ -32,19 +32,25 @@ class GovernancePackManifestTests(unittest.TestCase):
         manifest = load_pack_manifest()
         self.assertEqual("ssot-pack-marketing-attribution-conversion", manifest["metadata"]["origin"]["package_name"])
         self.assertEqual(10, len(manifest["documents"]["adr"]))
-        self.assertEqual(4, len(manifest["documents"]["spec"]))
+        self.assertEqual(18, len(manifest["documents"]["spec"]))
 
     def test_packaged_documents_are_readable(self) -> None:
         adr_manifest = load_document_manifest("adr")
         spec_manifest = load_document_manifest("spec")
         self.assertEqual("adr:browser-attribution-reporting-policy", adr_manifest[0]["id"])
-        self.assertEqual("spc:w3c-attribution-reporting-contract", spec_manifest[0]["id"])
+        self.assertEqual("spc:w3c-attribution-reporting-requirements", spec_manifest[0]["id"])
         self.assertIn("Browser Attribution Reporting Policy", read_packaged_document_text("adr", adr_manifest[0]["filename"]))
-        self.assertIn("Marketing Attribution And Conversion Measurement", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
+        self.assertIn("W3C Attribution Reporting Requirements", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
 
     def test_packaged_adr_documents_are_downstream_portable(self) -> None:
         for row in load_document_manifest("adr"):
             text = read_packaged_document_text("adr", row["filename"])
+            self.assertNotIn("pack:", text)
+            self.assertNotIn("This pack", text)
+
+    def test_packaged_spec_documents_are_downstream_portable(self) -> None:
+        for row in load_document_manifest("spec"):
+            text = read_packaged_document_text("spec", row["filename"])
             self.assertNotIn("pack:", text)
             self.assertNotIn("This pack", text)
 

@@ -1,0 +1,20 @@
+{
+  "id": "spc:microsoft-offline-conversion-requirements",
+  "number": 2007,
+  "slug": "microsoft-offline-conversion-requirements",
+  "title": "Microsoft Offline Conversion Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:offline-conversion-upload-policy", "adr:enhanced-conversion-identifier-policy"],
+  "primary_targets": ["Microsoft Advertising OfflineConversion data object"],
+  "scope": {"governs": ["conversion name", "conversion time", "conversion value", "currency", "MicrosoftClickId", "external attribution fields", "hashed identifiers"], "excludes": ["UET CAPI event API", "URL tracking template substitution"]},
+  "requirements": [
+    "Validate OfflineConversion fields before upload.",
+    "Document MicrosoftClickId and hashed identifier handling.",
+    "Capture external attribution credit and model behavior where used.",
+    "Record accepted and rejected upload evidence."
+  ],
+  "evidence_expectations": ["OfflineConversion payload fixture", "API response sample", "Validation report for conversion fields"]
+}

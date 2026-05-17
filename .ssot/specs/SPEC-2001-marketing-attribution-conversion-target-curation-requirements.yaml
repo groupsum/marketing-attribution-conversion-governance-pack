@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2001"
+number: 2001
+slug: "marketing-attribution-conversion-target-curation-requirements"
+title: "Marketing Attribution Conversion Target Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define the source-curation requirements for the marketing attribution conversion governance pack."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define the source-curation requirements for the marketing attribution conversion governance pack.
+  
+  ## Requirements
+  
+  - A source may be included only when it governs conversion attribution, browser attribution reporting, click identifiers, tracking templates, offline conversion uploads, server conversion APIs, industry conversion event protocols, clean-room attribution, click measurement quality, or measurement-quality evidence for attribution.
+  - Each included source must be classified as one of: browser attribution authority, click identifier authority, tracking template authority, offline conversion upload authority, server conversion API authority, industry conversion protocol authority, clean-room attribution authority, click measurement authority, or measurement quality reference.
+  - Sources that primarily govern generic web analytics, product analytics, app engagement analytics, consent-signal exchange, customer profile identity, ad supply-chain transparency, or general media verification are out of scope unless they directly define conversion attribution or click measurement requirements.
+  - Every downstream template target must trace back to at least one included source classification.
+  
+  ## Evidence Expectations
+  
+  - Source inventory showing each included target and its classification.
+  - Exclusion notes for adjacent sources that are not governed by this pack.
+  - Template manifest review showing source-to-template coverage.
+spec_kind: "governance"

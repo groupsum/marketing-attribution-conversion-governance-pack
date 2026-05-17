@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2005"
+number: 2005
+slug: "industry-attribution-protocol-target-requirements"
+title: "Industry Attribution Protocol Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for industry attribution, conversion protocol, and measurement-quality targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for industry attribution, conversion protocol, and measurement-quality targets.
+  
+  ## Requirements
+  
+  - IAB ECAPI coverage must govern standardized event and conversion communication fields and exchange evidence.
+  - IAB ADMaP and IAB Data Clean Rooms guidance must govern clean-room matching, attribution workflows, privacy-enhancing controls, and attribution outputs.
+  - IAB Click Measurement Guidelines coverage must govern valid click lifecycle, invalid click filtration, reporting parameters, clickthrough distinctions, and audit evidence.
+  - IAB Digital Video Ad Measurement Guidelines coverage must govern video ad measurement concepts when conversion attribution depends on video exposure evidence.
+  - MRC standards coverage must govern measurement quality and accreditation-facing evidence expectations where selected downstream.
+  
+  ## Evidence Expectations
+  
+  - Target inventory for ECAPI, ADMaP, data clean room guidance, click measurement, video ad measurement, and MRC measurement references.
+  - Template review showing industry targets are distinct from vendor conversion APIs.
+spec_kind: "governance"

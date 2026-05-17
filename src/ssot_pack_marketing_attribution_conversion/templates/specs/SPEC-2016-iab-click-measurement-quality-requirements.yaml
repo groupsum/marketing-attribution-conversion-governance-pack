@@ -1,0 +1,20 @@
+{
+  "id": "spc:iab-click-measurement-quality-requirements",
+  "number": 2016,
+  "slug": "iab-click-measurement-quality-requirements",
+  "title": "IAB Click Measurement Quality Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:click-measurement-quality-policy"],
+  "primary_targets": ["IAB Click Measurement Guidelines"],
+  "scope": {"governs": ["valid click lifecycle", "invalid click filtration", "clickthrough distinctions", "reporting parameters", "audit evidence"], "excludes": ["click ID capture storage", "conversion upload API payloads"]},
+  "requirements": [
+    "Document valid click lifecycle and filtration controls.",
+    "Validate invalid click exclusion and reporting parameter behavior.",
+    "Separate clickthrough evidence from in-unit click evidence where applicable.",
+    "Capture audit-ready click measurement evidence."
+  ],
+  "evidence_expectations": ["Click lifecycle fixture", "Filtration report", "Audit evidence sample"]
+}

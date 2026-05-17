@@ -1,0 +1,20 @@
+{
+  "id": "spc:linkedin-conversions-api-requirements",
+  "number": 2012,
+  "slug": "linkedin-conversions-api-requirements",
+  "title": "LinkedIn Conversions API Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:server-conversion-api-policy", "adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
+  "primary_targets": ["LinkedIn Conversions API"],
+  "scope": {"governs": ["conversion rules", "event payloads", "timestamps", "user identifiers", "campaign association", "API version evidence"], "excludes": ["CSV conversion upload procedures", "general LinkedIn reporting APIs"]},
+  "requirements": [
+    "Document LinkedIn conversion rules and event payload requirements.",
+    "Validate timestamps, user identifiers, campaign association, and API version handling.",
+    "Capture privacy and hashing behavior for user identifiers.",
+    "Record API response evidence for accepted and rejected payloads."
+  ],
+  "evidence_expectations": ["Conversions API request fixture", "API response sample", "Versioned API evidence"]
+}

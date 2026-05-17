@@ -1,0 +1,20 @@
+{
+  "id": "spc:meta-pixel-conversion-event-requirements",
+  "number": 2010,
+  "slug": "meta-pixel-conversion-event-requirements",
+  "title": "Meta Pixel Conversion Event Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:server-conversion-api-policy"],
+  "primary_targets": ["Meta Pixel reference"],
+  "scope": {"governs": ["browser pixel conversion events", "event parameters", "event IDs", "browser/server deduplication"], "excludes": ["server-only Conversions API payloads", "non-conversion pixel events"]},
+  "requirements": [
+    "Document pixel conversion event names and parameters.",
+    "Validate event ID behavior when deduplication with server events is required.",
+    "Capture browser event evidence and network payloads where applicable.",
+    "Keep browser pixel evidence distinct from server API response evidence."
+  ],
+  "evidence_expectations": ["Pixel event fixture", "Browser network sample", "Deduplication mapping"]
+}

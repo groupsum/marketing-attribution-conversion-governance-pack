@@ -1,0 +1,20 @@
+{
+  "id": "spc:meta-conversions-api-requirements",
+  "number": 2009,
+  "slug": "meta-conversions-api-requirements",
+  "title": "Meta Conversions API Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:server-conversion-api-policy", "adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
+  "primary_targets": ["Meta Conversions API"],
+  "scope": {"governs": ["event name", "event time", "action source", "user data", "custom data", "event ID", "deduplication", "response evidence"], "excludes": ["Meta Pixel browser-only events", "campaign URL tagging"]},
+  "requirements": [
+    "Validate Meta CAPI event payload fields before dispatch.",
+    "Document user data normalization, hashing, and consent behavior.",
+    "Capture event ID and deduplication behavior where browser and server events overlap.",
+    "Record API response evidence for accepted and rejected payloads."
+  ],
+  "evidence_expectations": ["CAPI request fixture", "API response sample", "Deduplication evidence"]
+}

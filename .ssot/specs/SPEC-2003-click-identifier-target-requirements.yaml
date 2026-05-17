@@ -1,0 +1,32 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2003"
+number: 2003
+slug: "click-identifier-target-requirements"
+title: "Click Identifier Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for click identifier and tracking-template targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for click identifier and tracking-template targets.
+  
+  ## Requirements
+  
+  - Google Ads auto-tagging coverage must govern GCLID, GBRAID, WBRAID, landing URL capture, and downstream conversion join readiness.
+  - Google Ads ValueTrack coverage must govern tracking-template parameters and dynamic URL substitution.
+  - Microsoft URL tracking coverage must govern upgraded URLs, final URL suffix behavior, and Microsoft click identifier handling.
+  - Click identifier targets must govern capture, retention, redaction, and join behavior separately from conversion upload payload requirements.
+  
+  ## Evidence Expectations
+  
+  - Target inventory for Google Ads auto-tagging, ValueTrack, Microsoft URL tracking, and Microsoft click identifiers.
+  - Template review showing separate downstream conformance targets for click identifiers and tracking templates.
+spec_kind: "governance"

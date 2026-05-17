@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:2004"
+number: 2004
+slug: "server-conversion-api-target-requirements"
+title: "Server Conversion API Target Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Define pack-local requirements for vendor server conversion API targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Purpose
+  
+  Define pack-local requirements for vendor server conversion API targets.
+  
+  ## Requirements
+  
+  - Google Ads click conversion upload coverage must govern click identifiers, conversion action, timestamp, value, currency, order ID, consent, and upload response behavior.
+  - Google enhanced conversion coverage must govern normalized hashed first-party identifiers, session attributes, click IDs, consent, and response behavior.
+  - Microsoft UET CAPI and OfflineConversion coverage must govern event payloads, MSCLKID, consent, offline conversion fields, hashed identifiers, external attribution fields, and API response behavior.
+  - Meta, TikTok, and LinkedIn conversion API coverage must govern event names, event times, user identifiers, custom data, deduplication, campaign association, API versions, and response evidence.
+  - Each vendor conversion API must remain a separate downstream target.
+  
+  ## Evidence Expectations
+  
+  - Target inventory for Google Ads, Microsoft Ads, Meta, TikTok, and LinkedIn conversion APIs.
+  - Template review showing one downstream target per vendor conversion surface.
+spec_kind: "governance"

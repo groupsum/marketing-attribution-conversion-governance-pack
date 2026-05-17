@@ -1,0 +1,20 @@
+{
+  "id": "spc:google-ads-click-conversion-upload-requirements",
+  "number": 2004,
+  "slug": "google-ads-click-conversion-upload-requirements",
+  "title": "Google Ads Click Conversion Upload Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:offline-conversion-upload-policy", "adr:server-conversion-api-policy", "adr:conversion-consent-and-privacy-policy"],
+  "primary_targets": ["Google Ads API upload click conversions"],
+  "scope": {"governs": ["click identifiers", "conversion action", "conversion time", "order ID", "value", "currency", "consent", "upload response"], "excludes": ["enhanced conversion lead uploads", "ValueTrack substitution"]},
+  "requirements": [
+    "Validate required click conversion upload fields before dispatch.",
+    "Document timestamp, value, currency, order ID, and consent handling.",
+    "Capture accepted and rejected upload responses.",
+    "Separate click conversion uploads from enhanced conversion identifier matching."
+  ],
+  "evidence_expectations": ["Upload request fixture", "API response sample", "Validation report for required fields"]
+}

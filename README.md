@@ -44,10 +44,24 @@ Marketing Attribution And Conversion Measurement
 
 ## Included SPECs
 
-- `spc:w3c-attribution-reporting-contract` - W3C Attribution Reporting Contract
-- `spc:google-microsoft-click-id-contract` - Google Microsoft Click ID Contract
-- `spc:meta-tiktok-linkedin-capi-contract` - Meta TikTok LinkedIn CAPI Contract
-- `spc:iab-ecapi-admap-contract` - IAB ECAPI ADMaP Contract
+- `spc:w3c-attribution-reporting-requirements` - W3C Attribution Reporting Requirements
+- `spc:google-ads-auto-tagging-click-id-requirements` - Google Ads Auto-Tagging Click ID Requirements
+- `spc:google-ads-valuetrack-parameter-requirements` - Google Ads ValueTrack Parameter Requirements
+- `spc:google-ads-click-conversion-upload-requirements` - Google Ads Click Conversion Upload Requirements
+- `spc:google-ads-enhanced-conversion-lead-requirements` - Google Ads Enhanced Conversion Lead Requirements
+- `spc:microsoft-uet-capi-requirements` - Microsoft UET CAPI Requirements
+- `spc:microsoft-offline-conversion-requirements` - Microsoft Offline Conversion Requirements
+- `spc:microsoft-url-tracking-requirements` - Microsoft URL Tracking Requirements
+- `spc:meta-conversions-api-requirements` - Meta Conversions API Requirements
+- `spc:meta-pixel-conversion-event-requirements` - Meta Pixel Conversion Event Requirements
+- `spc:tiktok-events-api-requirements` - TikTok Events API Requirements
+- `spc:linkedin-conversions-api-requirements` - LinkedIn Conversions API Requirements
+- `spc:linkedin-conversion-source-requirements` - LinkedIn Conversion Source Requirements
+- `spc:iab-ecapi-conversion-event-requirements` - IAB ECAPI Conversion Event Requirements
+- `spc:iab-admap-clean-room-attribution-requirements` - IAB ADMaP Clean Room Attribution Requirements
+- `spc:iab-click-measurement-quality-requirements` - IAB Click Measurement Quality Requirements
+- `spc:iab-video-ad-measurement-requirements` - IAB Video Ad Measurement Requirements
+- `spc:mrc-measurement-quality-reference-requirements` - MRC Measurement Quality Reference Requirements
 
 ## Install With uv
 

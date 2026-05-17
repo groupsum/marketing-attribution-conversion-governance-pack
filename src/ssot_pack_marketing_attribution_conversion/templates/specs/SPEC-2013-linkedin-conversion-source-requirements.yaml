@@ -1,0 +1,20 @@
+{
+  "id": "spc:linkedin-conversion-source-requirements",
+  "number": 2013,
+  "slug": "linkedin-conversion-source-requirements",
+  "title": "LinkedIn Conversion Source Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:server-conversion-api-policy"],
+  "primary_targets": ["LinkedIn Conversions overview"],
+  "scope": {"governs": ["online conversion sources", "offline conversion sources", "CRM conversion sources", "CSV conversion sources", "API conversion sources"], "excludes": ["payload-level Conversions API validation", "campaign reporting dashboards"]},
+  "requirements": [
+    "Classify each LinkedIn conversion source used downstream.",
+    "Document source-specific evidence and ownership.",
+    "Keep conversion source classification separate from payload validation.",
+    "Record unsupported conversion source types explicitly."
+  ],
+  "evidence_expectations": ["Conversion source inventory", "Classification review", "Source-specific evidence pointer"]
+}

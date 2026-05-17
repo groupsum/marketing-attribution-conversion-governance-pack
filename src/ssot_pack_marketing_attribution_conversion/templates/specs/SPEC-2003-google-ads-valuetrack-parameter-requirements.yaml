@@ -1,0 +1,20 @@
+{
+  "id": "spc:google-ads-valuetrack-parameter-requirements",
+  "number": 2003,
+  "slug": "google-ads-valuetrack-parameter-requirements",
+  "title": "Google Ads ValueTrack Parameter Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:tracking-template-parameter-policy"],
+  "primary_targets": ["Google Ads ValueTrack parameters"],
+  "scope": {"governs": ["tracking templates", "dynamic URL parameters", "landing URL insertion", "accepted parameter inventory"], "excludes": ["conversion upload APIs", "Microsoft URL tracking"]},
+  "requirements": [
+    "Inventory accepted ValueTrack parameters and local handling rules.",
+    "Validate dynamic parameter substitution and final landing URL shape.",
+    "Distinguish Google-defined ValueTrack parameters from local campaign parameters.",
+    "Reject or classify unrecognized parameters before attribution evidence uses them."
+  ],
+  "evidence_expectations": ["Tracking template fixtures", "Substituted landing URL samples", "Parameter validation report"]
+}

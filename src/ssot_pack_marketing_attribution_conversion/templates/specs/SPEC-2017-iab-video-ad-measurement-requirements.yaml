@@ -1,0 +1,20 @@
+{
+  "id": "spc:iab-video-ad-measurement-requirements",
+  "number": 2017,
+  "slug": "iab-video-ad-measurement-requirements",
+  "title": "IAB Video Ad Measurement Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:click-measurement-quality-policy"],
+  "primary_targets": ["IAB Digital Video Ad Measurement Guidelines"],
+  "scope": {"governs": ["digital video ad measurement concepts", "video exposure evidence", "measurement quality for attribution inputs"], "excludes": ["VAST template conformance", "OM SDK verification", "conversion upload payloads"]},
+  "requirements": [
+    "Document video ad exposure or measurement evidence used for conversion attribution.",
+    "Validate measurement-quality assumptions for video-based attribution inputs.",
+    "Record unsupported video measurement surfaces explicitly.",
+    "Keep video exposure evidence distinct from conversion event upload evidence."
+  ],
+  "evidence_expectations": ["Video measurement fixture", "Exposure evidence report", "Measurement-quality review"]
+}

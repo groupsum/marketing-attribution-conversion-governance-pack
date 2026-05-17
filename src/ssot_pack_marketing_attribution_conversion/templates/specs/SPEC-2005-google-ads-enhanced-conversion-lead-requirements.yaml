@@ -1,0 +1,20 @@
+{
+  "id": "spc:google-ads-enhanced-conversion-lead-requirements",
+  "number": 2005,
+  "slug": "google-ads-enhanced-conversion-lead-requirements",
+  "title": "Google Ads Enhanced Conversion Lead Requirements",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "governance",
+  "adr_ids": ["adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
+  "primary_targets": ["Google Ads enhanced conversions for leads"],
+  "scope": {"governs": ["hashed first-party identifiers", "normalization", "session attributes", "click IDs", "consent", "upload response"], "excludes": ["plain click conversion uploads", "browser attribution reports"]},
+  "requirements": [
+    "Document supported enhanced conversion identifiers and normalization rules.",
+    "Validate hashing and redaction behavior without exposing raw personal data.",
+    "Capture consent and session attribute handling.",
+    "Record upload response evidence for accepted and rejected payloads."
+  ],
+  "evidence_expectations": ["Redacted identifier fixture", "Hashing validation output", "Upload response sample"]
+}
