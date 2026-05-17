@@ -1,0 +1,30 @@
+{
+  "id": "adr:click-id-capture-and-retention-policy",
+  "number": 1002,
+  "slug": "click-id-capture-and-retention-policy",
+  "title": "Click ID Capture And Retention Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Click identifiers are attribution inputs that must be captured, retained, and joined before conversion uploads can be trusted.",
+    "Different advertising platforms define different click identifiers and acceptance windows."
+  ],
+  "decision": [
+    "Document accepted click identifiers and the surfaces where they are captured.",
+    "Govern capture, storage, retention, redaction, and conversion join behavior for click identifiers.",
+    "Treat GCLID, GBRAID, WBRAID, and MSCLKID as distinct identifiers with source-specific requirements.",
+    "Do not treat click ID capture as proof of conversion upload conformance."
+  ],
+  "authority_sources": [
+    "Google Ads auto-tagging",
+    "Google Ads click conversion uploads",
+    "Microsoft Advertising UET Conversion API",
+    "Microsoft Advertising OfflineConversion"
+  ],
+  "consequences": [
+    "Conversion evidence must show which click identifier was captured and retained.",
+    "Retention and privacy controls must be documented for click identifiers.",
+    "Missing click identifiers require explicit fallback or out-of-scope decisions."
+  ]
+}

@@ -1,0 +1,37 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1004"
+number: 1004
+slug: "server-conversion-api-authority-boundary"
+title: "Server Conversion API Authority Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Advertisers and measurement systems send conversion events to platforms using server-side APIs, offline upload APIs, browser pixels, and enhanced conversion identity matching."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Advertisers and measurement systems send conversion events to platforms using server-side APIs, offline upload APIs, browser pixels, and enhanced conversion identity matching.
+  
+  ## Decision
+  
+  This pack includes vendor server conversion and conversion-event sharing APIs when they define conversion event payloads, user-data fields, consent fields, event IDs, timestamps, conversion values, deduplication, campaign association, or upload response behavior.
+  
+  Included vendor authorities are Google Ads click and enhanced conversion uploads, Microsoft UET CAPI and OfflineConversion, Meta Conversions API and Pixel reference, TikTok Events API, and LinkedIn Conversions API.
+  
+  ## Authority Sources
+  
+  - Google Ads API upload click conversions.
+  - Google Ads enhanced conversions for leads.
+  - Microsoft Advertising UET Conversion API.
+  - Microsoft Advertising OfflineConversion data object.
+  - Meta Conversions API.
+  - Meta Pixel reference.
+  - TikTok Events API.
+  - LinkedIn Conversions API.
+  - LinkedIn Conversions overview.

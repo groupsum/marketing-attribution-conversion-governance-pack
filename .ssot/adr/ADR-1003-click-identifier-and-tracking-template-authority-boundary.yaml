@@ -1,0 +1,32 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1003"
+number: 1003
+slug: "click-identifier-and-tracking-template-authority-boundary"
+title: "Click Identifier And Tracking Template Authority Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Click identifiers and tracking templates are upstream attribution inputs. They must be captured and retained correctly before they can support conversion joins or upload APIs."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Click identifiers and tracking templates are upstream attribution inputs. They must be captured and retained correctly before they can support conversion joins or upload APIs.
+  
+  ## Decision
+  
+  This pack includes Google Ads auto-tagging identifiers, Google ValueTrack parameters, Microsoft click identifiers, and Microsoft upgraded URL tracking as click identity and tracking-template authorities.
+  
+  Click identifier and tracking-template authorities govern landing URL parameter capture, URL substitution, final URL suffix behavior, retention, and join readiness. They do not by themselves govern conversion upload payload shape.
+  
+  ## Authority Sources
+  
+  - Google Ads auto-tagging and GCLID documentation.
+  - Google Ads ValueTrack parameters.
+  - Microsoft Advertising URL tracking with upgraded URLs.
+  - Microsoft Advertising click identifiers used by UET CAPI and OfflineConversion.

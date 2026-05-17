@@ -1,0 +1,34 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1005"
+number: 1005
+slug: "industry-attribution-protocol-inclusion-boundary"
+title: "Industry Attribution Protocol Inclusion Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Industry attribution and measurement protocols define interoperability, clean-room matching, event communication, and measurement quality expectations that differ from vendor-specific conversion APIs."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Industry attribution and measurement protocols define interoperability, clean-room matching, event communication, and measurement quality expectations that differ from vendor-specific conversion APIs.
+  
+  ## Decision
+  
+  This pack includes IAB and measurement-quality sources when they govern attribution matching, conversion event exchange, valid click measurement, digital video ad measurement, clean-room measurement, or audit-quality measurement evidence.
+  
+  The included sources are IAB ADMaP, IAB ECAPI, IAB Click Measurement Guidelines, IAB Digital Video Ad Measurement Guidelines, IAB Data Clean Rooms guidance, and Media Rating Council measurement standards where they support attribution and conversion measurement quality.
+  
+  ## Authority Sources
+  
+  - IAB Tech Lab Attribution Data Matching Protocol.
+  - IAB Tech Lab Event and Conversion API.
+  - IAB Click Measurement Guidelines.
+  - IAB Digital Video Ad Measurement Guidelines.
+  - IAB Data Clean Rooms guidance.
+  - Media Rating Council measurement standards.

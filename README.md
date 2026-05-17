@@ -31,8 +31,16 @@ Marketing Attribution And Conversion Measurement
 
 ## Included ADRs
 
-- `adr:conversion-attribution-authority` - Conversion Attribution Authority
-- `adr:click-id-and-server-conversion-boundary` - Click ID And Server Conversion Boundary
+- `adr:browser-attribution-reporting-policy` - Browser Attribution Reporting Policy
+- `adr:click-id-capture-and-retention-policy` - Click ID Capture And Retention Policy
+- `adr:tracking-template-parameter-policy` - Tracking Template Parameter Policy
+- `adr:offline-conversion-upload-policy` - Offline Conversion Upload Policy
+- `adr:enhanced-conversion-identifier-policy` - Enhanced Conversion Identifier Policy
+- `adr:server-conversion-api-policy` - Server Conversion API Policy
+- `adr:conversion-consent-and-privacy-policy` - Conversion Consent And Privacy Policy
+- `adr:clean-room-attribution-protocol-policy` - Clean Room Attribution Protocol Policy
+- `adr:industry-conversion-event-protocol-policy` - Industry Conversion Event Protocol Policy
+- `adr:click-measurement-quality-policy` - Click Measurement Quality Policy
 
 ## Included SPECs
 

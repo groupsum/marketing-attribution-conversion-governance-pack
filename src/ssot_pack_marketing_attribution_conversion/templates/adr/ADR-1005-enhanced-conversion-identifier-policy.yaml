@@ -1,0 +1,30 @@
+{
+  "id": "adr:enhanced-conversion-identifier-policy",
+  "number": 1005,
+  "slug": "enhanced-conversion-identifier-policy",
+  "title": "Enhanced Conversion Identifier Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Some conversion APIs support matching with normalized and hashed first-party identifiers.",
+    "These identifiers are privacy-sensitive and require normalization, hashing, consent, and minimization controls."
+  ],
+  "decision": [
+    "Document whether hashed first-party identifiers are used for conversion matching.",
+    "Govern normalization, hashing, consent, redaction, and transport handling for enhanced conversion identifiers.",
+    "Keep identifier matching policy separate from event payload policy.",
+    "Require explicit evidence for normalization and hashing behavior."
+  ],
+  "authority_sources": [
+    "Google Ads enhanced conversions for leads",
+    "Microsoft Advertising OfflineConversion",
+    "Meta Conversions API",
+    "LinkedIn Conversions API"
+  ],
+  "consequences": [
+    "Identifier fixtures must avoid exposing raw personal data.",
+    "Evidence must prove normalization and hashing behavior without leaking sensitive values.",
+    "Conversion claims must identify whether matching relied on click IDs, hashed identifiers, or both."
+  ]
+}

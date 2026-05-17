@@ -1,0 +1,28 @@
+{
+  "id": "adr:offline-conversion-upload-policy",
+  "number": 1004,
+  "slug": "offline-conversion-upload-policy",
+  "title": "Offline Conversion Upload Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Offline conversion uploads connect later business outcomes to earlier ad interactions.",
+    "Upload conformance depends on click identifiers, conversion action identity, timestamps, values, currency, order IDs, and API response handling."
+  ],
+  "decision": [
+    "Document which offline conversion upload APIs are used downstream.",
+    "Govern required identifiers, conversion action fields, conversion timestamps, values, currency, order IDs, and response evidence.",
+    "Use Google Ads click conversion uploads and Microsoft OfflineConversion as source-specific authorities when selected.",
+    "Keep offline conversion uploads separate from browser pixels and server event APIs."
+  ],
+  "authority_sources": [
+    "Google Ads API upload click conversions",
+    "Microsoft Advertising OfflineConversion data object"
+  ],
+  "consequences": [
+    "Evidence must include upload fixtures and accepted or rejected API responses.",
+    "Conversion timestamps and attribution windows must be reviewable.",
+    "Duplicate prevention and order ID behavior must be documented where used."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "adr:tracking-template-parameter-policy",
+  "number": 1003,
+  "slug": "tracking-template-parameter-policy",
+  "title": "Tracking Template Parameter Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Advertising platforms use tracking templates and dynamic parameters to append campaign and click context to landing URLs.",
+    "Template substitution errors can break attribution joins or introduce ungoverned parameters."
+  ],
+  "decision": [
+    "Document accepted tracking-template parameters and final URL suffix behavior.",
+    "Validate dynamic parameter substitution before relying on campaign or click context.",
+    "Treat Google ValueTrack and Microsoft upgraded URL tracking as source-specific authorities.",
+    "Reject or classify unrecognized tracking parameters before they enter attribution evidence."
+  ],
+  "authority_sources": [
+    "Google Ads ValueTrack parameters",
+    "Microsoft Advertising URL tracking with upgraded URLs"
+  ],
+  "consequences": [
+    "Landing URL fixtures must show expected parameter substitution.",
+    "Parameter inventories must distinguish platform-defined parameters from local parameters.",
+    "Tracking-template conformance must be tested separately from conversion upload conformance."
+  ]
+}

@@ -1,0 +1,40 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1001"
+number: 1001
+slug: "marketing-attribution-conversion-domain-boundary"
+title: "Marketing Attribution Conversion Domain Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "The marketing attribution conversion governance pack curates standards and specifications for attribution reporting, click identifiers, tracking templates, offline conversion uploads, server conversion APIs, conversion event protocols, and clean-room attribution measurement."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  The marketing attribution conversion governance pack curates standards and specifications for attribution reporting, click identifiers, tracking templates, offline conversion uploads, server conversion APIs, conversion event protocols, and clean-room attribution measurement.
+  
+  ## Decision
+  
+  This pack governs marketing attribution and conversion measurement sources only. It includes browser attribution APIs, ad click identifiers, tracking-template parameter systems, vendor conversion upload APIs, server-to-server conversion event APIs, IAB attribution and conversion protocols, and click measurement quality guidance.
+  
+  This pack does not govern generic web analytics, product analytics, app engagement analytics, consent-signal exchange frameworks, customer identity profiles, ad supply-chain transparency files, or media-measurement SDKs unless the source directly defines conversion attribution or click measurement requirements.
+  
+  ## Authority Sources
+  
+  - W3C Attribution Reporting.
+  - IAB Tech Lab Attribution Data Matching Protocol.
+  - IAB Tech Lab Event and Conversion API.
+  - Google Ads auto-tagging, ValueTrack, click conversion uploads, and enhanced conversions.
+  - Microsoft Advertising UET Conversion API, OfflineConversion, and URL tracking.
+  - Meta Conversions API and Meta Pixel reference.
+  - TikTok Events API.
+  - LinkedIn Conversions API and conversion source documentation.
+  - IAB Click Measurement Guidelines.
+  - IAB Digital Video Ad Measurement Guidelines.
+  - IAB Data Clean Rooms guidance.
+  - Media Rating Council measurement standards.

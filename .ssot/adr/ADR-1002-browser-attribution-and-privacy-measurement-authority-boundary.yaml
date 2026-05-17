@@ -1,0 +1,29 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1002"
+number: 1002
+slug: "browser-attribution-and-privacy-measurement-authority-boundary"
+title: "Browser Attribution And Privacy Measurement Authority Boundary"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags: []
+summary: "Browser attribution APIs define privacy-preserving ad attribution and reporting behavior that differs from vendor conversion uploads and campaign URL tagging."
+supersedes: []
+superseded_by: []
+status_notes: []
+references: []
+body: |-
+  ## Context
+  
+  Browser attribution APIs define privacy-preserving ad attribution and reporting behavior that differs from vendor conversion uploads and campaign URL tagging.
+  
+  ## Decision
+  
+  This pack includes W3C Attribution Reporting as the browser attribution and privacy-preserving conversion measurement authority. It governs browser source registration, trigger registration, report generation, aggregation, and privacy limits.
+  
+  This boundary does not govern Google Ads, Microsoft Ads, Meta, TikTok, or LinkedIn server conversion upload APIs, even when those APIs consume conversion data derived from browser behavior.
+  
+  ## Authority Sources
+  
+  - W3C Attribution Reporting.

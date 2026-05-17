@@ -1,0 +1,25 @@
+{
+  "id": "adr:industry-conversion-event-protocol-policy",
+  "number": 1009,
+  "slug": "industry-conversion-event-protocol-policy",
+  "title": "Industry Conversion Event Protocol Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Industry event and conversion protocols provide interoperability targets that are separate from platform-specific conversion APIs.",
+    "A downstream system may need to support ECAPI-style event exchange in addition to vendor endpoints."
+  ],
+  "decision": [
+    "Document whether an industry conversion event protocol is a downstream interoperability target.",
+    "Use IAB ECAPI when standardized event and conversion communication is required.",
+    "Keep ECAPI conformance separate from vendor API conformance.",
+    "Record field mappings and exchange evidence for industry conversion event payloads."
+  ],
+  "authority_sources": ["IAB Tech Lab Event and Conversion API"],
+  "consequences": [
+    "Evidence must include ECAPI payload fixtures and exchange validation.",
+    "Vendor-specific accepted payloads cannot substitute for ECAPI conformance.",
+    "Field mapping gaps must be documented explicitly."
+  ]
+}
