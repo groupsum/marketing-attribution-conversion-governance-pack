@@ -33,7 +33,7 @@ Use this package when a downstream repository needs to answer: which standards, 
 - Pack ID: `pack:marketing-attribution-conversion`
 - PyPI package: `marketing-attribution-conversion-governance-pack`
 - Import package: `ssot_pack_marketing_attribution_conversion`
-- GitHub repository: `groupsum/marketing-attribution-conversion-governance-pack`
+- GitHub repository: [groupsum/marketing-attribution-conversion-governance-pack](https://github.com/groupsum/marketing-attribution-conversion-governance-pack)
 - Reservation owner: `extension-pack:marketing-attribution-conversion-governance-pack`
 
 ## Domain Focus
