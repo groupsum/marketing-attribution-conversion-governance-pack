@@ -28,7 +28,6 @@ Use this package when a downstream repository needs to answer: which standards, 
 ## Pack Metadata
 
 - Pack ID: `pack:marketing-attribution-conversion`
-- Priority: `P1.3`
 - PyPI package: `marketing-attribution-conversion-governance-pack`
 - Import package: `ssot_pack_marketing_attribution_conversion`
 - GitHub repository: `groupsum/marketing-attribution-conversion-governance-pack`
