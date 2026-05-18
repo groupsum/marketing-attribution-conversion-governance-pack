@@ -51,37 +51,37 @@ Marketing Attribution And Conversion Measurement
 
 ## Included ADRs
 
-- `adr:browser-attribution-reporting-policy` - Browser Attribution Reporting Policy
-- `adr:click-id-capture-and-retention-policy` - Click ID Capture And Retention Policy
-- `adr:tracking-template-parameter-policy` - Tracking Template Parameter Policy
-- `adr:offline-conversion-upload-policy` - Offline Conversion Upload Policy
-- `adr:enhanced-conversion-identifier-policy` - Enhanced Conversion Identifier Policy
-- `adr:server-conversion-api-policy` - Server Conversion API Policy
-- `adr:conversion-consent-and-privacy-policy` - Conversion Consent And Privacy Policy
-- `adr:clean-room-attribution-protocol-policy` - Clean Room Attribution Protocol Policy
-- `adr:industry-conversion-event-protocol-policy` - Industry Conversion Event Protocol Policy
-- `adr:click-measurement-quality-policy` - Click Measurement Quality Policy
+- [`adr:browser-attribution-reporting-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1001-browser-attribution-reporting-policy.yaml) - Browser Attribution Reporting Policy
+- [`adr:click-id-capture-and-retention-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1002-click-id-capture-and-retention-policy.yaml) - Click ID Capture And Retention Policy
+- [`adr:tracking-template-parameter-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1003-tracking-template-parameter-policy.yaml) - Tracking Template Parameter Policy
+- [`adr:offline-conversion-upload-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1004-offline-conversion-upload-policy.yaml) - Offline Conversion Upload Policy
+- [`adr:enhanced-conversion-identifier-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1005-enhanced-conversion-identifier-policy.yaml) - Enhanced Conversion Identifier Policy
+- [`adr:server-conversion-api-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1006-server-conversion-api-policy.yaml) - Server Conversion API Policy
+- [`adr:conversion-consent-and-privacy-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1007-conversion-consent-and-privacy-policy.yaml) - Conversion Consent And Privacy Policy
+- [`adr:clean-room-attribution-protocol-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1008-clean-room-attribution-protocol-policy.yaml) - Clean Room Attribution Protocol Policy
+- [`adr:industry-conversion-event-protocol-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1009-industry-conversion-event-protocol-policy.yaml) - Industry Conversion Event Protocol Policy
+- [`adr:click-measurement-quality-policy`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/adr/ADR-1010-click-measurement-quality-policy.yaml) - Click Measurement Quality Policy
 
 ## Included SPECs
 
-- `spc:w3c-attribution-reporting-requirements` - W3C Attribution Reporting Requirements
-- `spc:google-ads-auto-tagging-click-id-requirements` - Google Ads Auto-Tagging Click ID Requirements
-- `spc:google-ads-valuetrack-parameter-requirements` - Google Ads ValueTrack Parameter Requirements
-- `spc:google-ads-click-conversion-upload-requirements` - Google Ads Click Conversion Upload Requirements
-- `spc:google-ads-enhanced-conversion-lead-requirements` - Google Ads Enhanced Conversion Lead Requirements
-- `spc:microsoft-uet-capi-requirements` - Microsoft UET CAPI Requirements
-- `spc:microsoft-offline-conversion-requirements` - Microsoft Offline Conversion Requirements
-- `spc:microsoft-url-tracking-requirements` - Microsoft URL Tracking Requirements
-- `spc:meta-conversions-api-requirements` - Meta Conversions API Requirements
-- `spc:meta-pixel-conversion-event-requirements` - Meta Pixel Conversion Event Requirements
-- `spc:tiktok-events-api-requirements` - TikTok Events API Requirements
-- `spc:linkedin-conversions-api-requirements` - LinkedIn Conversions API Requirements
-- `spc:linkedin-conversion-source-requirements` - LinkedIn Conversion Source Requirements
-- `spc:iab-ecapi-conversion-event-requirements` - IAB ECAPI Conversion Event Requirements
-- `spc:iab-admap-clean-room-attribution-requirements` - IAB ADMaP Clean Room Attribution Requirements
-- `spc:iab-click-measurement-quality-requirements` - IAB Click Measurement Quality Requirements
-- `spc:iab-video-ad-measurement-requirements` - IAB Video Ad Measurement Requirements
-- `spc:mrc-measurement-quality-reference-requirements` - MRC Measurement Quality Reference Requirements
+- [`spc:w3c-attribution-reporting-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2001-w3c-attribution-reporting-requirements.yaml) - W3C Attribution Reporting Requirements
+- [`spc:google-ads-auto-tagging-click-id-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2002-google-ads-auto-tagging-click-id-requirements.yaml) - Google Ads Auto-Tagging Click ID Requirements
+- [`spc:google-ads-valuetrack-parameter-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2003-google-ads-valuetrack-parameter-requirements.yaml) - Google Ads ValueTrack Parameter Requirements
+- [`spc:google-ads-click-conversion-upload-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2004-google-ads-click-conversion-upload-requirements.yaml) - Google Ads Click Conversion Upload Requirements
+- [`spc:google-ads-enhanced-conversion-lead-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2005-google-ads-enhanced-conversion-lead-requirements.yaml) - Google Ads Enhanced Conversion Lead Requirements
+- [`spc:microsoft-uet-capi-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2006-microsoft-uet-capi-requirements.yaml) - Microsoft UET CAPI Requirements
+- [`spc:microsoft-offline-conversion-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2007-microsoft-offline-conversion-requirements.yaml) - Microsoft Offline Conversion Requirements
+- [`spc:microsoft-url-tracking-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2008-microsoft-url-tracking-requirements.yaml) - Microsoft URL Tracking Requirements
+- [`spc:meta-conversions-api-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2009-meta-conversions-api-requirements.yaml) - Meta Conversions API Requirements
+- [`spc:meta-pixel-conversion-event-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2010-meta-pixel-conversion-event-requirements.yaml) - Meta Pixel Conversion Event Requirements
+- [`spc:tiktok-events-api-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2011-tiktok-events-api-requirements.yaml) - TikTok Events API Requirements
+- [`spc:linkedin-conversions-api-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2012-linkedin-conversions-api-requirements.yaml) - LinkedIn Conversions API Requirements
+- [`spc:linkedin-conversion-source-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2013-linkedin-conversion-source-requirements.yaml) - LinkedIn Conversion Source Requirements
+- [`spc:iab-ecapi-conversion-event-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2014-iab-ecapi-conversion-event-requirements.yaml) - IAB ECAPI Conversion Event Requirements
+- [`spc:iab-admap-clean-room-attribution-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2015-iab-admap-clean-room-attribution-requirements.yaml) - IAB ADMaP Clean Room Attribution Requirements
+- [`spc:iab-click-measurement-quality-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2016-iab-click-measurement-quality-requirements.yaml) - IAB Click Measurement Quality Requirements
+- [`spc:iab-video-ad-measurement-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2017-iab-video-ad-measurement-requirements.yaml) - IAB Video Ad Measurement Requirements
+- [`spc:mrc-measurement-quality-reference-requirements`](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/blob/master/src/ssot_pack_marketing_attribution_conversion/templates/specs/SPEC-2018-mrc-measurement-quality-reference-requirements.yaml) - MRC Measurement Quality Reference Requirements
 
 ## Install With uv
 
