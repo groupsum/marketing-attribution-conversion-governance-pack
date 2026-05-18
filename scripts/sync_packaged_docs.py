@@ -13,7 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 ADR_TEMPLATES = ROOT / "src" / "ssot_pack_marketing_attribution_conversion" / "templates" / "adr"
 SPEC_TEMPLATES = ROOT / "src" / "ssot_pack_marketing_attribution_conversion" / "templates" / "specs"
-RESERVATION_OWNER = "extension-pack:ssot-pack-marketing-attribution-conversion"
+RESERVATION_OWNER = "extension-pack:marketing-attribution-conversion-governance-pack"
 MINIMUM_SCHEMA_VERSION = "0.4.0"
 
 

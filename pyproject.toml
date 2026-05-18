@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-pack-marketing-attribution-conversion"
+name = "marketing-attribution-conversion-governance-pack"
 version = "0.1.0"
 description = "Installable SSOT governance pack for attribution reporting, click IDs, tracking templates, offline conversions, conversion APIs, ECAPI, and ADMaP."
 readme = "README.md"
@@ -44,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-pack-marketing-attribution-conversion"
-Repository = "https://github.com/groupsum/ssot-pack-marketing-attribution-conversion"
-Issues = "https://github.com/groupsum/ssot-pack-marketing-attribution-conversion/issues"
+Homepage = "https://github.com/groupsum/marketing-attribution-conversion-governance-pack"
+Repository = "https://github.com/groupsum/marketing-attribution-conversion-governance-pack"
+Issues = "https://github.com/groupsum/marketing-attribution-conversion-governance-pack/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

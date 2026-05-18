@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "ssot_package_name": "ssot-pack-marketing-attribution-conversion",
+  "ssot_package_name": "marketing-attribution-conversion-governance-pack",
   "origin": {
     "id": "pack:marketing-attribution-conversion",
-    "package_name": "ssot-pack-marketing-attribution-conversion",
+    "package_name": "marketing-attribution-conversion-governance-pack",
     "import_name": "ssot_pack_marketing_attribution_conversion",
     "kind": "governance-pack",
     "title": "Marketing Attribution And Conversion Measurement",
@@ -19,7 +19,7 @@
   "trust": {
     "trusted_by_default": false,
     "origin": "extension-pack",
-    "reservation_owner": "extension-pack:ssot-pack-marketing-attribution-conversion"
+    "reservation_owner": "extension-pack:marketing-attribution-conversion-governance-pack"
   },
   "documents": {
     "adr": {

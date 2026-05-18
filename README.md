@@ -1,4 +1,4 @@
-# ssot-pack-marketing-attribution-conversion
+# marketing-attribution-conversion-governance-pack
 
 Installable SSOT governance pack for attribution reporting, click IDs, tracking templates, offline conversions, conversion APIs, ECAPI, and ADMaP.
 
@@ -8,10 +8,10 @@ This repository is an installable SSOT Registry governance pack. It packages imm
 
 - Pack ID: `pack:marketing-attribution-conversion`
 - Priority: `P1.3`
-- PyPI package: `ssot-pack-marketing-attribution-conversion`
+- PyPI package: `marketing-attribution-conversion-governance-pack`
 - Import package: `ssot_pack_marketing_attribution_conversion`
 - GitHub repository: `groupsum/marketing-attribution-conversion-governance-pack`
-- Reservation owner: `extension-pack:ssot-pack-marketing-attribution-conversion`
+- Reservation owner: `extension-pack:marketing-attribution-conversion-governance-pack`
 
 ## Domain Focus
 
@@ -66,15 +66,15 @@ Marketing Attribution And Conversion Measurement
 ## Install With uv
 
 ```bash
-uv add ssot-pack-marketing-attribution-conversion
-uv add ssot-registry ssot-pack-marketing-attribution-conversion
+uv add marketing-attribution-conversion-governance-pack
+uv add ssot-registry marketing-attribution-conversion-governance-pack
 ```
 
 ## Use With The SSOT Registry CLI
 
 ```bash
-uvx --from ssot-registry ssot pack install ssot-pack-marketing-attribution-conversion
-uvx --from ssot-registry ssot pack sync . ssot-pack-marketing-attribution-conversion
+uvx --from ssot-registry ssot pack install marketing-attribution-conversion-governance-pack
+uvx --from ssot-registry ssot pack sync . marketing-attribution-conversion-governance-pack
 uv run ssot adr list .
 uv run ssot spec list .
 ```
@@ -91,5 +91,5 @@ spec_manifest = load_document_manifest("spec")
 ## Resources
 
 - GitHub repository: https://github.com/groupsum/marketing-attribution-conversion-governance-pack
-- PyPI package: https://pypi.org/project/ssot-pack-marketing-attribution-conversion/
+- PyPI package: https://pypi.org/project/marketing-attribution-conversion-governance-pack/
 - SSOT Registry: https://pypi.org/project/ssot-registry/
