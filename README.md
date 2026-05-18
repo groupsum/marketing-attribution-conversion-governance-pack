@@ -1,10 +1,13 @@
+<div align="center">
+
 # marketing-attribution-conversion-governance-pack
 
 [![PyPI version](https://img.shields.io/pypi/v/marketing-attribution-conversion-governance-pack.svg)](https://pypi.org/project/marketing-attribution-conversion-governance-pack/)
 [![Python versions](https://img.shields.io/pypi/pyversions/marketing-attribution-conversion-governance-pack.svg)](https://pypi.org/project/marketing-attribution-conversion-governance-pack/)
 [![License](https://img.shields.io/pypi/l/marketing-attribution-conversion-governance-pack.svg)](https://pypi.org/project/marketing-attribution-conversion-governance-pack/)
 [![Publish](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/marketing-attribution-conversion-governance-pack/actions/workflows/publish.yml)
-[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/marketing-attribution-conversion-governance-pack)
+
+</div>
 
 Installable SSOT governance pack for attribution reporting, click IDs, tracking templates, offline conversions, conversion APIs, ECAPI, and ADMaP.
 
