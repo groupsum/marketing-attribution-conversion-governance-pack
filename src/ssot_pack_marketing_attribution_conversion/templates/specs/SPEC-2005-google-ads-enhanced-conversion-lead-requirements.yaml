@@ -1,20 +1,23 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:google-ads-enhanced-conversion-lead-requirements",
   "number": 2005,
   "slug": "google-ads-enhanced-conversion-lead-requirements",
   "title": "Google Ads Enhanced Conversion Lead Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document supported enhanced conversion identifiers and normalization rules.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Google Ads enhanced conversions for leads\n\n## Scope\n\n- Governs:\n  - hashed first-party identifiers\n  - normalization\n  - session attributes\n  - click IDs\n  - consent\n  - upload response\n- Excludes:\n  - plain click conversion uploads\n  - browser attribution reports\n\n## Requirements\n\n- Document supported enhanced conversion identifiers and normalization rules.\n- Validate hashing and redaction behavior without exposing raw personal data.\n- Capture consent and session attribute handling.\n- Record upload response evidence for accepted and rejected payloads.\n\n## Evidence Expectations\n\n- Redacted identifier fixture\n- Hashing validation output\n- Upload response sample\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
-  "primary_targets": ["Google Ads enhanced conversions for leads"],
-  "scope": {"governs": ["hashed first-party identifiers", "normalization", "session attributes", "click IDs", "consent", "upload response"], "excludes": ["plain click conversion uploads", "browser attribution reports"]},
-  "requirements": [
-    "Document supported enhanced conversion identifiers and normalization rules.",
-    "Validate hashing and redaction behavior without exposing raw personal data.",
-    "Capture consent and session attribute handling.",
-    "Record upload response evidence for accepted and rejected payloads."
-  ],
-  "evidence_expectations": ["Redacted identifier fixture", "Hashing validation output", "Upload response sample"]
+  "adr_ids": [
+    "adr:enhanced-conversion-identifier-policy",
+    "adr:conversion-consent-and-privacy-policy"
+  ]
 }

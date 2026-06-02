@@ -1,20 +1,24 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:tiktok-events-api-requirements",
   "number": 2011,
   "slug": "tiktok-events-api-requirements",
   "title": "TikTok Events API Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document selected TikTok event source types and event payload fields.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- TikTok Events API\n\n## Scope\n\n- Governs:\n  - web events\n  - app events\n  - offline events\n  - CRM events\n  - identifiers\n  - properties\n  - timestamps\n  - attribution\n  - API responses\n- Excludes:\n  - TikTok pixel-only implementation\n  - campaign management APIs\n\n## Requirements\n\n- Document selected TikTok event source types and event payload fields.\n- Validate identifiers, properties, timestamps, and attribution fields.\n- Capture privacy and consent handling for user data.\n- Record API response evidence for accepted and rejected payloads.\n\n## Evidence Expectations\n\n- Events API request fixture\n- API response sample\n- Validation report for identifiers and properties\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:server-conversion-api-policy", "adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
-  "primary_targets": ["TikTok Events API"],
-  "scope": {"governs": ["web events", "app events", "offline events", "CRM events", "identifiers", "properties", "timestamps", "attribution", "API responses"], "excludes": ["TikTok pixel-only implementation", "campaign management APIs"]},
-  "requirements": [
-    "Document selected TikTok event source types and event payload fields.",
-    "Validate identifiers, properties, timestamps, and attribution fields.",
-    "Capture privacy and consent handling for user data.",
-    "Record API response evidence for accepted and rejected payloads."
-  ],
-  "evidence_expectations": ["Events API request fixture", "API response sample", "Validation report for identifiers and properties"]
+  "adr_ids": [
+    "adr:server-conversion-api-policy",
+    "adr:enhanced-conversion-identifier-policy",
+    "adr:conversion-consent-and-privacy-policy"
+  ]
 }

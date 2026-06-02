@@ -1,28 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:clean-room-attribution-protocol-policy",
   "number": 1008,
   "slug": "clean-room-attribution-protocol-policy",
   "title": "Clean Room Attribution Protocol Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document whether clean-room attribution protocols govern downstream attribution measurement.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Clean-room attribution workflows use privacy-enhancing methods to match first-party data and produce attribution outputs.",
-    "These workflows differ from direct vendor conversion upload APIs."
-  ],
-  "decision": [
-    "Document whether clean-room attribution protocols govern downstream attribution measurement.",
-    "Use ADMaP when deterministic first-party matching, privacy-enhancing technology workflow, and attribution output standardization are required.",
-    "Keep clean-room attribution workflow evidence separate from server conversion API evidence.",
-    "Record parties, input datasets, matching keys, privacy controls, and output measures where applicable."
-  ],
-  "authority_sources": [
-    "IAB Tech Lab Attribution Data Matching Protocol",
-    "IAB Data Clean Rooms guidance"
-  ],
-  "consequences": [
-    "Evidence must include clean-room workflow, matching, and output artifacts appropriate to the downstream environment.",
-    "Attribution claims must identify privacy-enhancing controls and matching assumptions.",
-    "Direct conversion API acceptance does not prove clean-room attribution conformance."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- IAB Tech Lab Attribution Data Matching Protocol\n- IAB Data Clean Rooms guidance\n\n## Context\n\n- Clean-room attribution workflows use privacy-enhancing methods to match first-party data and produce attribution outputs.\n- These workflows differ from direct vendor conversion upload APIs.\n\n## Decision\n\n- Document whether clean-room attribution protocols govern downstream attribution measurement.\n- Use ADMaP when deterministic first-party matching, privacy-enhancing technology workflow, and attribution output standardization are required.\n- Keep clean-room attribution workflow evidence separate from server conversion API evidence.\n- Record parties, input datasets, matching keys, privacy controls, and output measures where applicable.\n\n## Consequences\n\n- Evidence must include clean-room workflow, matching, and output artifacts appropriate to the downstream environment.\n- Attribution claims must identify privacy-enhancing controls and matching assumptions.\n- Direct conversion API acceptance does not prove clean-room attribution conformance.\n\n"
 }

@@ -34,7 +34,7 @@ wheels = [
 
 [[package]]
 name = "marketing-attribution-conversion-governance-pack"
-version = "0.1.1.dev1"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "ssot-pack-contracts" },

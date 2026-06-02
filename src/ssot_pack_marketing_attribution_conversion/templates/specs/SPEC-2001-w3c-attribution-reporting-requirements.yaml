@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:w3c-attribution-reporting-requirements",
   "number": 2001,
   "slug": "w3c-attribution-reporting-requirements",
   "title": "W3C Attribution Reporting Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document source and trigger registration behavior for governed attribution flows.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- W3C Attribution Reporting\n\n## Scope\n\n- Governs:\n  - source registration\n  - trigger registration\n  - event-level reports\n  - aggregatable reports\n  - privacy limits\n- Excludes:\n  - server conversion APIs\n  - click ID storage\n  - vendor upload response handling\n\n## Requirements\n\n- Document source and trigger registration behavior for governed attribution flows.\n- Validate report type, aggregation, timing, and privacy constraints against the selected browser authority.\n- Capture representative event-level and aggregatable report evidence where supported.\n- Keep browser attribution evidence separate from server conversion API evidence.\n\n## Evidence Expectations\n\n- Registration fixtures\n- Report output samples\n- Validation report for privacy and aggregation constraints\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:browser-attribution-reporting-policy"],
-  "primary_targets": ["W3C Attribution Reporting"],
-  "scope": {"governs": ["source registration", "trigger registration", "event-level reports", "aggregatable reports", "privacy limits"], "excludes": ["server conversion APIs", "click ID storage", "vendor upload response handling"]},
-  "requirements": [
-    "Document source and trigger registration behavior for governed attribution flows.",
-    "Validate report type, aggregation, timing, and privacy constraints against the selected browser authority.",
-    "Capture representative event-level and aggregatable report evidence where supported.",
-    "Keep browser attribution evidence separate from server conversion API evidence."
-  ],
-  "evidence_expectations": ["Registration fixtures", "Report output samples", "Validation report for privacy and aggregation constraints"]
+  "adr_ids": [
+    "adr:browser-attribution-reporting-policy"
+  ]
 }

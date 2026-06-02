@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:meta-pixel-conversion-event-requirements",
   "number": 2010,
   "slug": "meta-pixel-conversion-event-requirements",
   "title": "Meta Pixel Conversion Event Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document pixel conversion event names and parameters.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Meta Pixel reference\n\n## Scope\n\n- Governs:\n  - browser pixel conversion events\n  - event parameters\n  - event IDs\n  - browser/server deduplication\n- Excludes:\n  - server-only Conversions API payloads\n  - non-conversion pixel events\n\n## Requirements\n\n- Document pixel conversion event names and parameters.\n- Validate event ID behavior when deduplication with server events is required.\n- Capture browser event evidence and network payloads where applicable.\n- Keep browser pixel evidence distinct from server API response evidence.\n\n## Evidence Expectations\n\n- Pixel event fixture\n- Browser network sample\n- Deduplication mapping\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:server-conversion-api-policy"],
-  "primary_targets": ["Meta Pixel reference"],
-  "scope": {"governs": ["browser pixel conversion events", "event parameters", "event IDs", "browser/server deduplication"], "excludes": ["server-only Conversions API payloads", "non-conversion pixel events"]},
-  "requirements": [
-    "Document pixel conversion event names and parameters.",
-    "Validate event ID behavior when deduplication with server events is required.",
-    "Capture browser event evidence and network payloads where applicable.",
-    "Keep browser pixel evidence distinct from server API response evidence."
-  ],
-  "evidence_expectations": ["Pixel event fixture", "Browser network sample", "Deduplication mapping"]
+  "adr_ids": [
+    "adr:server-conversion-api-policy"
+  ]
 }

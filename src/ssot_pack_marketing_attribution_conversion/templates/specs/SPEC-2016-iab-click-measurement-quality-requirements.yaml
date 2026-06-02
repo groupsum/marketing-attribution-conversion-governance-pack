@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:iab-click-measurement-quality-requirements",
   "number": 2016,
   "slug": "iab-click-measurement-quality-requirements",
   "title": "IAB Click Measurement Quality Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document valid click lifecycle and filtration controls.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- IAB Click Measurement Guidelines\n\n## Scope\n\n- Governs:\n  - valid click lifecycle\n  - invalid click filtration\n  - clickthrough distinctions\n  - reporting parameters\n  - audit evidence\n- Excludes:\n  - click ID capture storage\n  - conversion upload API payloads\n\n## Requirements\n\n- Document valid click lifecycle and filtration controls.\n- Validate invalid click exclusion and reporting parameter behavior.\n- Separate clickthrough evidence from in-unit click evidence where applicable.\n- Capture audit-ready click measurement evidence.\n\n## Evidence Expectations\n\n- Click lifecycle fixture\n- Filtration report\n- Audit evidence sample\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:click-measurement-quality-policy"],
-  "primary_targets": ["IAB Click Measurement Guidelines"],
-  "scope": {"governs": ["valid click lifecycle", "invalid click filtration", "clickthrough distinctions", "reporting parameters", "audit evidence"], "excludes": ["click ID capture storage", "conversion upload API payloads"]},
-  "requirements": [
-    "Document valid click lifecycle and filtration controls.",
-    "Validate invalid click exclusion and reporting parameter behavior.",
-    "Separate clickthrough evidence from in-unit click evidence where applicable.",
-    "Capture audit-ready click measurement evidence."
-  ],
-  "evidence_expectations": ["Click lifecycle fixture", "Filtration report", "Audit evidence sample"]
+  "adr_ids": [
+    "adr:click-measurement-quality-policy"
+  ]
 }

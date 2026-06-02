@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.1.1.dev1
+## 0.1.1
 
-- Pending release notes.
+- Convert ADR and SPEC templates to the schema-compatible SSOT pack document shape.
+- Finalize the package release for downstream pack sync.
 
 ## 0.1.0
 

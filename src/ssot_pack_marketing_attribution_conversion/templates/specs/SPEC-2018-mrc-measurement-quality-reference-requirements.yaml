@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:mrc-measurement-quality-reference-requirements",
   "number": 2018,
   "slug": "mrc-measurement-quality-reference-requirements",
   "title": "MRC Measurement Quality Reference Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document MRC measurement-quality references selected for downstream attribution evidence.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Media Rating Council standards\n\n## Scope\n\n- Governs:\n  - measurement quality references\n  - auditability\n  - accreditation-facing evidence expectations\n- Excludes:\n  - specific vendor conversion APIs\n  - browser attribution API mechanics\n\n## Requirements\n\n- Document MRC measurement-quality references selected for downstream attribution evidence.\n- Capture auditability expectations and evidence ownership.\n- Record where MRC guidance is informative rather than a direct conformance target.\n- Keep quality-reference evidence separate from API payload validation.\n\n## Evidence Expectations\n\n- Measurement quality checklist\n- Auditability evidence\n- Reference applicability note\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:click-measurement-quality-policy"],
-  "primary_targets": ["Media Rating Council standards"],
-  "scope": {"governs": ["measurement quality references", "auditability", "accreditation-facing evidence expectations"], "excludes": ["specific vendor conversion APIs", "browser attribution API mechanics"]},
-  "requirements": [
-    "Document MRC measurement-quality references selected for downstream attribution evidence.",
-    "Capture auditability expectations and evidence ownership.",
-    "Record where MRC guidance is informative rather than a direct conformance target.",
-    "Keep quality-reference evidence separate from API payload validation."
-  ],
-  "evidence_expectations": ["Measurement quality checklist", "Auditability evidence", "Reference applicability note"]
+  "adr_ids": [
+    "adr:click-measurement-quality-policy"
+  ]
 }

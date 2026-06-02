@@ -1,31 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:server-conversion-api-policy",
   "number": 1006,
   "slug": "server-conversion-api-policy",
   "title": "Server Conversion API Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document the selected server conversion APIs and their governed event payload requirements.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Server-side conversion APIs share event data from advertiser systems to advertising platforms.",
-    "Each platform defines its own required fields, user-data fields, timestamps, action sources, event IDs, response behavior, and deduplication expectations."
-  ],
-  "decision": [
-    "Document the selected server conversion APIs and their governed event payload requirements.",
-    "Keep each vendor conversion API as a separate conformance target.",
-    "Govern event name, event time, action source, user data, custom data, event ID, value, currency, and response evidence where the selected source defines them.",
-    "Do not collapse vendor conversion APIs into a single generic event schema."
-  ],
-  "authority_sources": [
-    "Meta Conversions API",
-    "TikTok Events API",
-    "LinkedIn Conversions API",
-    "Microsoft Advertising UET Conversion API",
-    "Google Ads API upload click conversions"
-  ],
-  "consequences": [
-    "Evidence must include API-specific request and response fixtures.",
-    "Deduplication behavior must be documented where browser and server events overlap.",
-    "Unsupported vendor fields must be explicit gaps rather than silently omitted."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- Meta Conversions API\n- TikTok Events API\n- LinkedIn Conversions API\n- Microsoft Advertising UET Conversion API\n- Google Ads API upload click conversions\n\n## Context\n\n- Server-side conversion APIs share event data from advertiser systems to advertising platforms.\n- Each platform defines its own required fields, user-data fields, timestamps, action sources, event IDs, response behavior, and deduplication expectations.\n\n## Decision\n\n- Document the selected server conversion APIs and their governed event payload requirements.\n- Keep each vendor conversion API as a separate conformance target.\n- Govern event name, event time, action source, user data, custom data, event ID, value, currency, and response evidence where the selected source defines them.\n- Do not collapse vendor conversion APIs into a single generic event schema.\n\n## Consequences\n\n- Evidence must include API-specific request and response fixtures.\n- Deduplication behavior must be documented where browser and server events overlap.\n- Unsupported vendor fields must be explicit gaps rather than silently omitted.\n\n"
 }

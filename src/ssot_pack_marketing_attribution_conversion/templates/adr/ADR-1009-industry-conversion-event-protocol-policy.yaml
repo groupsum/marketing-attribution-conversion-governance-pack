@@ -1,25 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:industry-conversion-event-protocol-policy",
   "number": 1009,
   "slug": "industry-conversion-event-protocol-policy",
   "title": "Industry Conversion Event Protocol Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document whether an industry conversion event protocol is a downstream interoperability target.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Industry event and conversion protocols provide interoperability targets that are separate from platform-specific conversion APIs.",
-    "A downstream system may need to support ECAPI-style event exchange in addition to vendor endpoints."
-  ],
-  "decision": [
-    "Document whether an industry conversion event protocol is a downstream interoperability target.",
-    "Use IAB ECAPI when standardized event and conversion communication is required.",
-    "Keep ECAPI conformance separate from vendor API conformance.",
-    "Record field mappings and exchange evidence for industry conversion event payloads."
-  ],
-  "authority_sources": ["IAB Tech Lab Event and Conversion API"],
-  "consequences": [
-    "Evidence must include ECAPI payload fixtures and exchange validation.",
-    "Vendor-specific accepted payloads cannot substitute for ECAPI conformance.",
-    "Field mapping gaps must be documented explicitly."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- IAB Tech Lab Event and Conversion API\n\n## Context\n\n- Industry event and conversion protocols provide interoperability targets that are separate from platform-specific conversion APIs.\n- A downstream system may need to support ECAPI-style event exchange in addition to vendor endpoints.\n\n## Decision\n\n- Document whether an industry conversion event protocol is a downstream interoperability target.\n- Use IAB ECAPI when standardized event and conversion communication is required.\n- Keep ECAPI conformance separate from vendor API conformance.\n- Record field mappings and exchange evidence for industry conversion event payloads.\n\n## Consequences\n\n- Evidence must include ECAPI payload fixtures and exchange validation.\n- Vendor-specific accepted payloads cannot substitute for ECAPI conformance.\n- Field mapping gaps must be documented explicitly.\n\n"
 }

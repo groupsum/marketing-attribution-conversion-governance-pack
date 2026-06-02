@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:google-ads-auto-tagging-click-id-requirements",
   "number": 2002,
   "slug": "google-ads-auto-tagging-click-id-requirements",
   "title": "Google Ads Auto-Tagging Click ID Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document which Google click identifiers are accepted and where they are captured.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Google Ads auto-tagging / GCLID\n\n## Scope\n\n- Governs:\n  - GCLID\n  - GBRAID\n  - WBRAID\n  - landing URL capture\n  - conversion join readiness\n- Excludes:\n  - ValueTrack parameter substitution\n  - conversion upload payload shape\n\n## Requirements\n\n- Document which Google click identifiers are accepted and where they are captured.\n- Validate landing URL capture and persistence behavior for accepted identifiers.\n- Define retention, redaction, and join behavior before conversion upload claims rely on these IDs.\n- Record fallback behavior when click identifiers are absent.\n\n## Evidence Expectations\n\n- Landing URL fixtures with click IDs\n- Storage and retention test output\n- Conversion join sample\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:click-id-capture-and-retention-policy"],
-  "primary_targets": ["Google Ads auto-tagging / GCLID"],
-  "scope": {"governs": ["GCLID", "GBRAID", "WBRAID", "landing URL capture", "conversion join readiness"], "excludes": ["ValueTrack parameter substitution", "conversion upload payload shape"]},
-  "requirements": [
-    "Document which Google click identifiers are accepted and where they are captured.",
-    "Validate landing URL capture and persistence behavior for accepted identifiers.",
-    "Define retention, redaction, and join behavior before conversion upload claims rely on these IDs.",
-    "Record fallback behavior when click identifiers are absent."
-  ],
-  "evidence_expectations": ["Landing URL fixtures with click IDs", "Storage and retention test output", "Conversion join sample"]
+  "adr_ids": [
+    "adr:click-id-capture-and-retention-policy"
+  ]
 }

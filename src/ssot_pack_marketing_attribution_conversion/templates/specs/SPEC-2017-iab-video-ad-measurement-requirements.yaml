@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:iab-video-ad-measurement-requirements",
   "number": 2017,
   "slug": "iab-video-ad-measurement-requirements",
   "title": "IAB Video Ad Measurement Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document video ad exposure or measurement evidence used for conversion attribution.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- IAB Digital Video Ad Measurement Guidelines\n\n## Scope\n\n- Governs:\n  - digital video ad measurement concepts\n  - video exposure evidence\n  - measurement quality for attribution inputs\n- Excludes:\n  - VAST template conformance\n  - OM SDK verification\n  - conversion upload payloads\n\n## Requirements\n\n- Document video ad exposure or measurement evidence used for conversion attribution.\n- Validate measurement-quality assumptions for video-based attribution inputs.\n- Record unsupported video measurement surfaces explicitly.\n- Keep video exposure evidence distinct from conversion event upload evidence.\n\n## Evidence Expectations\n\n- Video measurement fixture\n- Exposure evidence report\n- Measurement-quality review\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:click-measurement-quality-policy"],
-  "primary_targets": ["IAB Digital Video Ad Measurement Guidelines"],
-  "scope": {"governs": ["digital video ad measurement concepts", "video exposure evidence", "measurement quality for attribution inputs"], "excludes": ["VAST template conformance", "OM SDK verification", "conversion upload payloads"]},
-  "requirements": [
-    "Document video ad exposure or measurement evidence used for conversion attribution.",
-    "Validate measurement-quality assumptions for video-based attribution inputs.",
-    "Record unsupported video measurement surfaces explicitly.",
-    "Keep video exposure evidence distinct from conversion event upload evidence."
-  ],
-  "evidence_expectations": ["Video measurement fixture", "Exposure evidence report", "Measurement-quality review"]
+  "adr_ids": [
+    "adr:click-measurement-quality-policy"
+  ]
 }

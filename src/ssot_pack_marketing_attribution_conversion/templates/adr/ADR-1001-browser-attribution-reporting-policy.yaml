@@ -1,25 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:browser-attribution-reporting-policy",
   "number": 1001,
   "slug": "browser-attribution-reporting-policy",
   "title": "Browser Attribution Reporting Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document whether browser attribution reporting is used for downstream conversion measurement.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Browser attribution APIs can measure ad interactions and conversions without relying on user-level cross-site tracking.",
-    "These APIs have source registration, trigger registration, reporting, aggregation, and privacy constraints that differ from vendor conversion uploads."
-  ],
-  "decision": [
-    "Document whether browser attribution reporting is used for downstream conversion measurement.",
-    "When used, treat W3C Attribution Reporting as the authority for source registration, trigger registration, report types, and privacy limits.",
-    "Keep browser attribution reporting separate from click identifier capture and server conversion APIs.",
-    "Record unsupported browser attribution behavior as explicit gaps."
-  ],
-  "authority_sources": ["W3C Attribution Reporting"],
-  "consequences": [
-    "Evidence must include source or trigger registration examples and report outputs where applicable.",
-    "Conversion attribution claims must identify browser privacy and aggregation constraints.",
-    "Server-side conversion acceptance does not prove browser attribution conformance."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- W3C Attribution Reporting\n\n## Context\n\n- Browser attribution APIs can measure ad interactions and conversions without relying on user-level cross-site tracking.\n- These APIs have source registration, trigger registration, reporting, aggregation, and privacy constraints that differ from vendor conversion uploads.\n\n## Decision\n\n- Document whether browser attribution reporting is used for downstream conversion measurement.\n- When used, treat W3C Attribution Reporting as the authority for source registration, trigger registration, report types, and privacy limits.\n- Keep browser attribution reporting separate from click identifier capture and server conversion APIs.\n- Record unsupported browser attribution behavior as explicit gaps.\n\n## Consequences\n\n- Evidence must include source or trigger registration examples and report outputs where applicable.\n- Conversion attribution claims must identify browser privacy and aggregation constraints.\n- Server-side conversion acceptance does not prove browser attribution conformance.\n\n"
 }

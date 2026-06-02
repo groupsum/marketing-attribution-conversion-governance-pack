@@ -1,31 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:conversion-consent-and-privacy-policy",
   "number": 1007,
   "slug": "conversion-consent-and-privacy-policy",
   "title": "Conversion Consent And Privacy Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document consent and privacy fields required by each selected conversion authority.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Conversion payloads often include consent, processing restrictions, identifiers, and user-data fields.",
-    "Privacy-sensitive fields must be governed before conversion data is shared with advertising platforms."
-  ],
-  "decision": [
-    "Document consent and privacy fields required by each selected conversion authority.",
-    "Govern suppression, redaction, hashing, limited-use flags, and consent-state mapping for conversion events.",
-    "Do not send privacy-sensitive conversion fields without recorded downstream authority and evidence.",
-    "Keep consent handling evidence linked to the conversion payloads it controls."
-  ],
-  "authority_sources": [
-    "Google Ads click and enhanced conversion uploads",
-    "Microsoft Advertising UET Conversion API",
-    "Meta Conversions API",
-    "TikTok Events API",
-    "LinkedIn Conversions API"
-  ],
-  "consequences": [
-    "Conversion fixtures must show privacy fields or documented suppression behavior.",
-    "Evidence must prove consent-state mapping for representative payloads.",
-    "Privacy gaps must block conformance claims for affected conversion surfaces."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- Google Ads click and enhanced conversion uploads\n- Microsoft Advertising UET Conversion API\n- Meta Conversions API\n- TikTok Events API\n- LinkedIn Conversions API\n\n## Context\n\n- Conversion payloads often include consent, processing restrictions, identifiers, and user-data fields.\n- Privacy-sensitive fields must be governed before conversion data is shared with advertising platforms.\n\n## Decision\n\n- Document consent and privacy fields required by each selected conversion authority.\n- Govern suppression, redaction, hashing, limited-use flags, and consent-state mapping for conversion events.\n- Do not send privacy-sensitive conversion fields without recorded downstream authority and evidence.\n- Keep consent handling evidence linked to the conversion payloads it controls.\n\n## Consequences\n\n- Conversion fixtures must show privacy fields or documented suppression behavior.\n- Evidence must prove consent-state mapping for representative payloads.\n- Privacy gaps must block conformance claims for affected conversion surfaces.\n\n"
 }

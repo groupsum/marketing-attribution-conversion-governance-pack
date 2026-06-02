@@ -1,20 +1,24 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:microsoft-uet-capi-requirements",
   "number": 2006,
   "slug": "microsoft-uet-capi-requirements",
   "title": "Microsoft UET CAPI Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document UET CAPI event payload fields and required identifiers.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Microsoft Advertising UET Conversion API\n\n## Scope\n\n- Governs:\n  - server-side UET events\n  - MSCLKID\n  - consent\n  - event time\n  - event value\n  - API response\n- Excludes:\n  - OfflineConversion data object\n  - Microsoft URL tracking templates\n\n## Requirements\n\n- Document UET CAPI event payload fields and required identifiers.\n- Validate MSCLKID, consent, event time, value, and currency behavior where used.\n- Capture API request and response evidence.\n- Keep UET CAPI evidence separate from offline conversion upload evidence.\n\n## Evidence Expectations\n\n- UET CAPI request fixture\n- API response sample\n- Validation report for identifiers and consent\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:server-conversion-api-policy", "adr:click-id-capture-and-retention-policy", "adr:conversion-consent-and-privacy-policy"],
-  "primary_targets": ["Microsoft Advertising UET Conversion API"],
-  "scope": {"governs": ["server-side UET events", "MSCLKID", "consent", "event time", "event value", "API response"], "excludes": ["OfflineConversion data object", "Microsoft URL tracking templates"]},
-  "requirements": [
-    "Document UET CAPI event payload fields and required identifiers.",
-    "Validate MSCLKID, consent, event time, value, and currency behavior where used.",
-    "Capture API request and response evidence.",
-    "Keep UET CAPI evidence separate from offline conversion upload evidence."
-  ],
-  "evidence_expectations": ["UET CAPI request fixture", "API response sample", "Validation report for identifiers and consent"]
+  "adr_ids": [
+    "adr:server-conversion-api-policy",
+    "adr:click-id-capture-and-retention-policy",
+    "adr:conversion-consent-and-privacy-policy"
+  ]
 }

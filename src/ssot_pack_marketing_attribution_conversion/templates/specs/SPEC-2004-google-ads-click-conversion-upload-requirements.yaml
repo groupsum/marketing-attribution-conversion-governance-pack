@@ -1,20 +1,24 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:google-ads-click-conversion-upload-requirements",
   "number": 2004,
   "slug": "google-ads-click-conversion-upload-requirements",
   "title": "Google Ads Click Conversion Upload Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Validate required click conversion upload fields before dispatch.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Google Ads API upload click conversions\n\n## Scope\n\n- Governs:\n  - click identifiers\n  - conversion action\n  - conversion time\n  - order ID\n  - value\n  - currency\n  - consent\n  - upload response\n- Excludes:\n  - enhanced conversion lead uploads\n  - ValueTrack substitution\n\n## Requirements\n\n- Validate required click conversion upload fields before dispatch.\n- Document timestamp, value, currency, order ID, and consent handling.\n- Capture accepted and rejected upload responses.\n- Separate click conversion uploads from enhanced conversion identifier matching.\n\n## Evidence Expectations\n\n- Upload request fixture\n- API response sample\n- Validation report for required fields\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:offline-conversion-upload-policy", "adr:server-conversion-api-policy", "adr:conversion-consent-and-privacy-policy"],
-  "primary_targets": ["Google Ads API upload click conversions"],
-  "scope": {"governs": ["click identifiers", "conversion action", "conversion time", "order ID", "value", "currency", "consent", "upload response"], "excludes": ["enhanced conversion lead uploads", "ValueTrack substitution"]},
-  "requirements": [
-    "Validate required click conversion upload fields before dispatch.",
-    "Document timestamp, value, currency, order ID, and consent handling.",
-    "Capture accepted and rejected upload responses.",
-    "Separate click conversion uploads from enhanced conversion identifier matching."
-  ],
-  "evidence_expectations": ["Upload request fixture", "API response sample", "Validation report for required fields"]
+  "adr_ids": [
+    "adr:offline-conversion-upload-policy",
+    "adr:server-conversion-api-policy",
+    "adr:conversion-consent-and-privacy-policy"
+  ]
 }

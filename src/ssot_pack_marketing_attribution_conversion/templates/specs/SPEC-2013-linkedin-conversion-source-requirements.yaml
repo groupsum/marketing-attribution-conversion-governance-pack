@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:linkedin-conversion-source-requirements",
   "number": 2013,
   "slug": "linkedin-conversion-source-requirements",
   "title": "LinkedIn Conversion Source Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Classify each LinkedIn conversion source used downstream.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- LinkedIn Conversions overview\n\n## Scope\n\n- Governs:\n  - online conversion sources\n  - offline conversion sources\n  - CRM conversion sources\n  - CSV conversion sources\n  - API conversion sources\n- Excludes:\n  - payload-level Conversions API validation\n  - campaign reporting dashboards\n\n## Requirements\n\n- Classify each LinkedIn conversion source used downstream.\n- Document source-specific evidence and ownership.\n- Keep conversion source classification separate from payload validation.\n- Record unsupported conversion source types explicitly.\n\n## Evidence Expectations\n\n- Conversion source inventory\n- Classification review\n- Source-specific evidence pointer\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:server-conversion-api-policy"],
-  "primary_targets": ["LinkedIn Conversions overview"],
-  "scope": {"governs": ["online conversion sources", "offline conversion sources", "CRM conversion sources", "CSV conversion sources", "API conversion sources"], "excludes": ["payload-level Conversions API validation", "campaign reporting dashboards"]},
-  "requirements": [
-    "Classify each LinkedIn conversion source used downstream.",
-    "Document source-specific evidence and ownership.",
-    "Keep conversion source classification separate from payload validation.",
-    "Record unsupported conversion source types explicitly."
-  ],
-  "evidence_expectations": ["Conversion source inventory", "Classification review", "Source-specific evidence pointer"]
+  "adr_ids": [
+    "adr:server-conversion-api-policy"
+  ]
 }

@@ -1,20 +1,23 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:microsoft-offline-conversion-requirements",
   "number": 2007,
   "slug": "microsoft-offline-conversion-requirements",
   "title": "Microsoft Offline Conversion Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Validate OfflineConversion fields before upload.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Microsoft Advertising OfflineConversion data object\n\n## Scope\n\n- Governs:\n  - conversion name\n  - conversion time\n  - conversion value\n  - currency\n  - MicrosoftClickId\n  - external attribution fields\n  - hashed identifiers\n- Excludes:\n  - UET CAPI event API\n  - URL tracking template substitution\n\n## Requirements\n\n- Validate OfflineConversion fields before upload.\n- Document MicrosoftClickId and hashed identifier handling.\n- Capture external attribution credit and model behavior where used.\n- Record accepted and rejected upload evidence.\n\n## Evidence Expectations\n\n- OfflineConversion payload fixture\n- API response sample\n- Validation report for conversion fields\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:offline-conversion-upload-policy", "adr:enhanced-conversion-identifier-policy"],
-  "primary_targets": ["Microsoft Advertising OfflineConversion data object"],
-  "scope": {"governs": ["conversion name", "conversion time", "conversion value", "currency", "MicrosoftClickId", "external attribution fields", "hashed identifiers"], "excludes": ["UET CAPI event API", "URL tracking template substitution"]},
-  "requirements": [
-    "Validate OfflineConversion fields before upload.",
-    "Document MicrosoftClickId and hashed identifier handling.",
-    "Capture external attribution credit and model behavior where used.",
-    "Record accepted and rejected upload evidence."
-  ],
-  "evidence_expectations": ["OfflineConversion payload fixture", "API response sample", "Validation report for conversion fields"]
+  "adr_ids": [
+    "adr:offline-conversion-upload-policy",
+    "adr:enhanced-conversion-identifier-policy"
+  ]
 }

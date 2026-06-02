@@ -1,20 +1,24 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:meta-conversions-api-requirements",
   "number": 2009,
   "slug": "meta-conversions-api-requirements",
   "title": "Meta Conversions API Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Validate Meta CAPI event payload fields before dispatch.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Meta Conversions API\n\n## Scope\n\n- Governs:\n  - event name\n  - event time\n  - action source\n  - user data\n  - custom data\n  - event ID\n  - deduplication\n  - response evidence\n- Excludes:\n  - Meta Pixel browser-only events\n  - campaign URL tagging\n\n## Requirements\n\n- Validate Meta CAPI event payload fields before dispatch.\n- Document user data normalization, hashing, and consent behavior.\n- Capture event ID and deduplication behavior where browser and server events overlap.\n- Record API response evidence for accepted and rejected payloads.\n\n## Evidence Expectations\n\n- CAPI request fixture\n- API response sample\n- Deduplication evidence\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:server-conversion-api-policy", "adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
-  "primary_targets": ["Meta Conversions API"],
-  "scope": {"governs": ["event name", "event time", "action source", "user data", "custom data", "event ID", "deduplication", "response evidence"], "excludes": ["Meta Pixel browser-only events", "campaign URL tagging"]},
-  "requirements": [
-    "Validate Meta CAPI event payload fields before dispatch.",
-    "Document user data normalization, hashing, and consent behavior.",
-    "Capture event ID and deduplication behavior where browser and server events overlap.",
-    "Record API response evidence for accepted and rejected payloads."
-  ],
-  "evidence_expectations": ["CAPI request fixture", "API response sample", "Deduplication evidence"]
+  "adr_ids": [
+    "adr:server-conversion-api-policy",
+    "adr:enhanced-conversion-identifier-policy",
+    "adr:conversion-consent-and-privacy-policy"
+  ]
 }

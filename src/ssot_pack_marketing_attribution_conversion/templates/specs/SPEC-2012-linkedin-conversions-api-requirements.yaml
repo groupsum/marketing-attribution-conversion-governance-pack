@@ -1,20 +1,24 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:linkedin-conversions-api-requirements",
   "number": 2012,
   "slug": "linkedin-conversions-api-requirements",
   "title": "LinkedIn Conversions API Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document LinkedIn conversion rules and event payload requirements.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- LinkedIn Conversions API\n\n## Scope\n\n- Governs:\n  - conversion rules\n  - event payloads\n  - timestamps\n  - user identifiers\n  - campaign association\n  - API version evidence\n- Excludes:\n  - CSV conversion upload procedures\n  - general LinkedIn reporting APIs\n\n## Requirements\n\n- Document LinkedIn conversion rules and event payload requirements.\n- Validate timestamps, user identifiers, campaign association, and API version handling.\n- Capture privacy and hashing behavior for user identifiers.\n- Record API response evidence for accepted and rejected payloads.\n\n## Evidence Expectations\n\n- Conversions API request fixture\n- API response sample\n- Versioned API evidence\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:server-conversion-api-policy", "adr:enhanced-conversion-identifier-policy", "adr:conversion-consent-and-privacy-policy"],
-  "primary_targets": ["LinkedIn Conversions API"],
-  "scope": {"governs": ["conversion rules", "event payloads", "timestamps", "user identifiers", "campaign association", "API version evidence"], "excludes": ["CSV conversion upload procedures", "general LinkedIn reporting APIs"]},
-  "requirements": [
-    "Document LinkedIn conversion rules and event payload requirements.",
-    "Validate timestamps, user identifiers, campaign association, and API version handling.",
-    "Capture privacy and hashing behavior for user identifiers.",
-    "Record API response evidence for accepted and rejected payloads."
-  ],
-  "evidence_expectations": ["Conversions API request fixture", "API response sample", "Versioned API evidence"]
+  "adr_ids": [
+    "adr:server-conversion-api-policy",
+    "adr:enhanced-conversion-identifier-policy",
+    "adr:conversion-consent-and-privacy-policy"
+  ]
 }

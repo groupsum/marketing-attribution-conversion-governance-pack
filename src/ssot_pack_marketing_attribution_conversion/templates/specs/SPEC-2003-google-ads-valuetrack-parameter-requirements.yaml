@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:google-ads-valuetrack-parameter-requirements",
   "number": 2003,
   "slug": "google-ads-valuetrack-parameter-requirements",
   "title": "Google Ads ValueTrack Parameter Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Inventory accepted ValueTrack parameters and local handling rules.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Google Ads ValueTrack parameters\n\n## Scope\n\n- Governs:\n  - tracking templates\n  - dynamic URL parameters\n  - landing URL insertion\n  - accepted parameter inventory\n- Excludes:\n  - conversion upload APIs\n  - Microsoft URL tracking\n\n## Requirements\n\n- Inventory accepted ValueTrack parameters and local handling rules.\n- Validate dynamic parameter substitution and final landing URL shape.\n- Distinguish Google-defined ValueTrack parameters from local campaign parameters.\n- Reject or classify unrecognized parameters before attribution evidence uses them.\n\n## Evidence Expectations\n\n- Tracking template fixtures\n- Substituted landing URL samples\n- Parameter validation report\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:tracking-template-parameter-policy"],
-  "primary_targets": ["Google Ads ValueTrack parameters"],
-  "scope": {"governs": ["tracking templates", "dynamic URL parameters", "landing URL insertion", "accepted parameter inventory"], "excludes": ["conversion upload APIs", "Microsoft URL tracking"]},
-  "requirements": [
-    "Inventory accepted ValueTrack parameters and local handling rules.",
-    "Validate dynamic parameter substitution and final landing URL shape.",
-    "Distinguish Google-defined ValueTrack parameters from local campaign parameters.",
-    "Reject or classify unrecognized parameters before attribution evidence uses them."
-  ],
-  "evidence_expectations": ["Tracking template fixtures", "Substituted landing URL samples", "Parameter validation report"]
+  "adr_ids": [
+    "adr:tracking-template-parameter-policy"
+  ]
 }

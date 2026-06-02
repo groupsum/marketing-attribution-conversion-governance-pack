@@ -1,28 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:tracking-template-parameter-policy",
   "number": 1003,
   "slug": "tracking-template-parameter-policy",
   "title": "Tracking Template Parameter Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document accepted tracking-template parameters and final URL suffix behavior.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Advertising platforms use tracking templates and dynamic parameters to append campaign and click context to landing URLs.",
-    "Template substitution errors can break attribution joins or introduce ungoverned parameters."
-  ],
-  "decision": [
-    "Document accepted tracking-template parameters and final URL suffix behavior.",
-    "Validate dynamic parameter substitution before relying on campaign or click context.",
-    "Treat Google ValueTrack and Microsoft upgraded URL tracking as source-specific authorities.",
-    "Reject or classify unrecognized tracking parameters before they enter attribution evidence."
-  ],
-  "authority_sources": [
-    "Google Ads ValueTrack parameters",
-    "Microsoft Advertising URL tracking with upgraded URLs"
-  ],
-  "consequences": [
-    "Landing URL fixtures must show expected parameter substitution.",
-    "Parameter inventories must distinguish platform-defined parameters from local parameters.",
-    "Tracking-template conformance must be tested separately from conversion upload conformance."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- Google Ads ValueTrack parameters\n- Microsoft Advertising URL tracking with upgraded URLs\n\n## Context\n\n- Advertising platforms use tracking templates and dynamic parameters to append campaign and click context to landing URLs.\n- Template substitution errors can break attribution joins or introduce ungoverned parameters.\n\n## Decision\n\n- Document accepted tracking-template parameters and final URL suffix behavior.\n- Validate dynamic parameter substitution before relying on campaign or click context.\n- Treat Google ValueTrack and Microsoft upgraded URL tracking as source-specific authorities.\n- Reject or classify unrecognized tracking parameters before they enter attribution evidence.\n\n## Consequences\n\n- Landing URL fixtures must show expected parameter substitution.\n- Parameter inventories must distinguish platform-defined parameters from local parameters.\n- Tracking-template conformance must be tested separately from conversion upload conformance.\n\n"
 }

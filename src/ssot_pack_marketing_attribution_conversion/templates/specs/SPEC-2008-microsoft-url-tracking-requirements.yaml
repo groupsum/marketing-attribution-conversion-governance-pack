@@ -1,20 +1,23 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:microsoft-url-tracking-requirements",
   "number": 2008,
   "slug": "microsoft-url-tracking-requirements",
   "title": "Microsoft URL Tracking Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document Microsoft tracking templates and final URL suffix behavior.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- Microsoft Advertising URL tracking with upgraded URLs\n\n## Scope\n\n- Governs:\n  - tracking templates\n  - final URL suffix\n  - parameter substitution\n  - landing URL evidence\n- Excludes:\n  - UET CAPI payloads\n  - OfflineConversion uploads\n\n## Requirements\n\n- Document Microsoft tracking templates and final URL suffix behavior.\n- Validate parameter substitution and landing URL output.\n- Identify click identifiers and campaign parameters captured from URLs.\n- Keep URL tracking evidence separate from conversion upload evidence.\n\n## Evidence Expectations\n\n- Tracking template fixture\n- Substituted landing URL sample\n- Parameter validation report\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:tracking-template-parameter-policy", "adr:click-id-capture-and-retention-policy"],
-  "primary_targets": ["Microsoft Advertising URL tracking with upgraded URLs"],
-  "scope": {"governs": ["tracking templates", "final URL suffix", "parameter substitution", "landing URL evidence"], "excludes": ["UET CAPI payloads", "OfflineConversion uploads"]},
-  "requirements": [
-    "Document Microsoft tracking templates and final URL suffix behavior.",
-    "Validate parameter substitution and landing URL output.",
-    "Identify click identifiers and campaign parameters captured from URLs.",
-    "Keep URL tracking evidence separate from conversion upload evidence."
-  ],
-  "evidence_expectations": ["Tracking template fixture", "Substituted landing URL sample", "Parameter validation report"]
+  "adr_ids": [
+    "adr:tracking-template-parameter-policy",
+    "adr:click-id-capture-and-retention-policy"
+  ]
 }

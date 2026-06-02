@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:iab-admap-clean-room-attribution-requirements",
   "number": 2015,
   "slug": "iab-admap-clean-room-attribution-requirements",
   "title": "IAB ADMaP Clean Room Attribution Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document clean-room parties, input datasets, matching keys, privacy controls, and attribution outputs.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- IAB Tech Lab ADMaP\n- IAB Data Clean Rooms guidance\n\n## Scope\n\n- Governs:\n  - deterministic first-party matching\n  - PET workflow\n  - clean-room attribution outputs\n  - measurement evidence\n- Excludes:\n  - direct vendor conversion uploads\n  - browser attribution reports\n\n## Requirements\n\n- Document clean-room parties, input datasets, matching keys, privacy controls, and attribution outputs.\n- Validate workflow evidence against selected ADMaP or data clean room requirements.\n- Record privacy-enhancing technology assumptions and limitations.\n- Keep clean-room evidence separate from conversion API evidence.\n\n## Evidence Expectations\n\n- Clean-room workflow artifact\n- Matching/output evidence\n- Privacy-control review\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:clean-room-attribution-protocol-policy"],
-  "primary_targets": ["IAB Tech Lab ADMaP", "IAB Data Clean Rooms guidance"],
-  "scope": {"governs": ["deterministic first-party matching", "PET workflow", "clean-room attribution outputs", "measurement evidence"], "excludes": ["direct vendor conversion uploads", "browser attribution reports"]},
-  "requirements": [
-    "Document clean-room parties, input datasets, matching keys, privacy controls, and attribution outputs.",
-    "Validate workflow evidence against selected ADMaP or data clean room requirements.",
-    "Record privacy-enhancing technology assumptions and limitations.",
-    "Keep clean-room evidence separate from conversion API evidence."
-  ],
-  "evidence_expectations": ["Clean-room workflow artifact", "Matching/output evidence", "Privacy-control review"]
+  "adr_ids": [
+    "adr:clean-room-attribution-protocol-policy"
+  ]
 }

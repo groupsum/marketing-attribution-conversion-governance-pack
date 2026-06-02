@@ -1,29 +1,18 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:click-measurement-quality-policy",
   "number": 1010,
   "slug": "click-measurement-quality-policy",
   "title": "Click Measurement Quality Policy",
   "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document click measurement quality controls where downstream attribution relies on click counts or clickthrough evidence.",
   "supersedes": [],
   "superseded_by": [],
-  "context": [
-    "Attribution quality depends on valid click measurement, filtration, reporting parameters, and auditable evidence.",
-    "Click measurement quality is not the same as click identifier capture."
-  ],
-  "decision": [
-    "Document click measurement quality controls where downstream attribution relies on click counts or clickthrough evidence.",
-    "Use IAB Click Measurement Guidelines for valid click lifecycle, invalid click filtration, and click reporting controls.",
-    "Use video ad measurement and measurement-quality references when attribution depends on media exposure evidence.",
-    "Keep measurement quality evidence separate from conversion upload evidence."
-  ],
-  "authority_sources": [
-    "IAB Click Measurement Guidelines",
-    "IAB Digital Video Ad Measurement Guidelines",
-    "Media Rating Council measurement standards"
-  ],
-  "consequences": [
-    "Click attribution claims must identify valid-click and filtration evidence.",
-    "Invalid-click handling must be auditable.",
-    "Exposure and click quality gaps must be explicit before downstream conversion claims rely on them."
-  ]
+  "status_notes": [],
+  "references": [],
+  "body": "## Authority Sources\n\n- IAB Click Measurement Guidelines\n- IAB Digital Video Ad Measurement Guidelines\n- Media Rating Council measurement standards\n\n## Context\n\n- Attribution quality depends on valid click measurement, filtration, reporting parameters, and auditable evidence.\n- Click measurement quality is not the same as click identifier capture.\n\n## Decision\n\n- Document click measurement quality controls where downstream attribution relies on click counts or clickthrough evidence.\n- Use IAB Click Measurement Guidelines for valid click lifecycle, invalid click filtration, and click reporting controls.\n- Use video ad measurement and measurement-quality references when attribution depends on media exposure evidence.\n- Keep measurement quality evidence separate from conversion upload evidence.\n\n## Consequences\n\n- Click attribution claims must identify valid-click and filtration evidence.\n- Invalid-click handling must be auditable.\n- Exposure and click quality gaps must be explicit before downstream conversion claims rely on them.\n\n"
 }

@@ -1,20 +1,22 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "spec",
   "id": "spc:iab-ecapi-conversion-event-requirements",
   "number": 2014,
   "slug": "iab-ecapi-conversion-event-requirements",
   "title": "IAB ECAPI Conversion Event Requirements",
-  "status": "active",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "decision_date": null,
+  "tags": [],
+  "summary": "Document ECAPI event and conversion fields represented downstream.",
   "supersedes": [],
   "superseded_by": [],
+  "status_notes": [],
+  "references": [],
+  "body": "## Primary Targets\n\n- IAB Tech Lab ECAPI\n\n## Scope\n\n- Governs:\n  - standardized event fields\n  - conversion communication\n  - exchange evidence\n  - field mappings\n- Excludes:\n  - vendor-specific conversion API payloads\n  - clean-room matching workflows\n\n## Requirements\n\n- Document ECAPI event and conversion fields represented downstream.\n- Validate field mappings before exchange.\n- Capture exchange evidence for accepted and rejected payloads.\n- Keep ECAPI conformance separate from vendor endpoint acceptance.\n\n## Evidence Expectations\n\n- ECAPI payload fixture\n- Exchange validation output\n- Field mapping table\n\n",
   "spec_kind": "governance",
-  "adr_ids": ["adr:industry-conversion-event-protocol-policy"],
-  "primary_targets": ["IAB Tech Lab ECAPI"],
-  "scope": {"governs": ["standardized event fields", "conversion communication", "exchange evidence", "field mappings"], "excludes": ["vendor-specific conversion API payloads", "clean-room matching workflows"]},
-  "requirements": [
-    "Document ECAPI event and conversion fields represented downstream.",
-    "Validate field mappings before exchange.",
-    "Capture exchange evidence for accepted and rejected payloads.",
-    "Keep ECAPI conformance separate from vendor endpoint acceptance."
-  ],
-  "evidence_expectations": ["ECAPI payload fixture", "Exchange validation output", "Field mapping table"]
+  "adr_ids": [
+    "adr:industry-conversion-event-protocol-policy"
+  ]
 }
