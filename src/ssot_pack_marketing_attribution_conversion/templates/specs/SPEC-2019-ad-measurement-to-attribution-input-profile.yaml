@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:ad-measurement-to-attribution-input-profile",
+  "number": 2019,
+  "slug": "ad-measurement-to-attribution-input-profile",
+  "title": "Ad Measurement To Attribution Input Profile",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines the evidence contract between ad measurement and attribution processing.",
+  "body": "## Requirements\n\n- Accept only measurement results carrying source, method, time, quality, and validity evidence.\n- Preserve measurement identifiers through attribution.\n- Do not reinterpret invalid measurement as an attributable interaction.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.iab.com/guidelines/"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "measurement",
+    "attribution",
+    "input",
+    "profile"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:attribution-consumes-canonical-ad-measurement-results"
+  ]
+}

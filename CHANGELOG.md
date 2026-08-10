@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0.dev1
+
+- Removed duplicate ad measurement ownership and added an attribution-input profile.
+
 ## 0.1.1
 
 - Convert ADR and SPEC templates to the schema-compatible SSOT pack document shape.

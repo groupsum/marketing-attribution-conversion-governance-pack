@@ -5,14 +5,22 @@
   "number": 2018,
   "slug": "mrc-measurement-quality-reference-requirements",
   "title": "MRC Measurement Quality Reference Requirements",
-  "status": "accepted",
+  "status": "superseded",
   "origin": "extension-pack",
   "decision_date": null,
   "tags": [],
   "summary": "Document MRC measurement-quality references selected for downstream attribution evidence.",
   "supersedes": [],
-  "superseded_by": [],
-  "status_notes": [],
+  "superseded_by": [
+    "spc:mrc-viewability-measurement-requirements",
+    "spc:mrc-invalid-traffic-filtration-requirements"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
+  ],
   "references": [],
   "body": "## Primary Targets\n\n- Media Rating Council standards\n\n## Scope\n\n- Governs:\n  - measurement quality references\n  - auditability\n  - accreditation-facing evidence expectations\n- Excludes:\n  - specific vendor conversion APIs\n  - browser attribution API mechanics\n\n## Requirements\n\n- Document MRC measurement-quality references selected for downstream attribution evidence.\n- Capture auditability expectations and evidence ownership.\n- Record where MRC guidance is informative rather than a direct conformance target.\n- Keep quality-reference evidence separate from API payload validation.\n\n## Evidence Expectations\n\n- Measurement quality checklist\n- Auditability evidence\n- Reference applicability note\n\n",
   "spec_kind": "governance",

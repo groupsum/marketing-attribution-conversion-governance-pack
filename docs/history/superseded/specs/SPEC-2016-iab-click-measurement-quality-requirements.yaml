@@ -5,14 +5,21 @@
   "number": 2016,
   "slug": "iab-click-measurement-quality-requirements",
   "title": "IAB Click Measurement Quality Requirements",
-  "status": "accepted",
+  "status": "superseded",
   "origin": "extension-pack",
   "decision_date": null,
   "tags": [],
   "summary": "Document valid click lifecycle and filtration controls.",
   "supersedes": [],
-  "superseded_by": [],
-  "status_notes": [],
+  "superseded_by": [
+    "spc:iab-click-measurement-requirements"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
+  ],
   "references": [],
   "body": "## Primary Targets\n\n- IAB Click Measurement Guidelines\n\n## Scope\n\n- Governs:\n  - valid click lifecycle\n  - invalid click filtration\n  - clickthrough distinctions\n  - reporting parameters\n  - audit evidence\n- Excludes:\n  - click ID capture storage\n  - conversion upload API payloads\n\n## Requirements\n\n- Document valid click lifecycle and filtration controls.\n- Validate invalid click exclusion and reporting parameter behavior.\n- Separate clickthrough evidence from in-unit click evidence where applicable.\n- Capture audit-ready click measurement evidence.\n\n## Evidence Expectations\n\n- Click lifecycle fixture\n- Filtration report\n- Audit evidence sample\n\n",
   "spec_kind": "governance",

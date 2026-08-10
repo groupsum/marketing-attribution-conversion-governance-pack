@@ -5,14 +5,21 @@
   "number": 2017,
   "slug": "iab-video-ad-measurement-requirements",
   "title": "IAB Video Ad Measurement Requirements",
-  "status": "accepted",
+  "status": "superseded",
   "origin": "extension-pack",
   "decision_date": null,
   "tags": [],
   "summary": "Document video ad exposure or measurement evidence used for conversion attribution.",
   "supersedes": [],
-  "superseded_by": [],
-  "status_notes": [],
+  "superseded_by": [
+    "spc:iab-digital-video-impression-requirements"
+  ],
+  "status_notes": [
+    {
+      "date": "2026-08-10",
+      "note": "Superseded by narrower canonical governance documents during the portfolio deduplication."
+    }
+  ],
   "references": [],
   "body": "## Primary Targets\n\n- IAB Digital Video Ad Measurement Guidelines\n\n## Scope\n\n- Governs:\n  - digital video ad measurement concepts\n  - video exposure evidence\n  - measurement quality for attribution inputs\n- Excludes:\n  - VAST template conformance\n  - OM SDK verification\n  - conversion upload payloads\n\n## Requirements\n\n- Document video ad exposure or measurement evidence used for conversion attribution.\n- Validate measurement-quality assumptions for video-based attribution inputs.\n- Record unsupported video measurement surfaces explicitly.\n- Keep video exposure evidence distinct from conversion event upload evidence.\n\n## Evidence Expectations\n\n- Video measurement fixture\n- Exposure evidence report\n- Measurement-quality review\n\n",
   "spec_kind": "governance",
