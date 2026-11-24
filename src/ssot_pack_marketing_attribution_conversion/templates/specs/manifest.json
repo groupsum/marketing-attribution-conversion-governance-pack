@@ -291,7 +291,7 @@
     "title": "Ad Measurement To Attribution Input Profile",
     "filename": "SPEC-2019-ad-measurement-to-attribution-input-profile.yaml",
     "target_path": ".ssot/specs/SPEC-2019-ad-measurement-to-attribution-input-profile.yaml",
-    "sha256": "c705d57cc88223d3020bc25be791b9273cf24c2eafedfbb7147fd961c62ceb22",
+    "sha256": "17f740f5fa6d8c1dfc7827a93256f2b458544039ea798590a95ca2814c1752a6",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:marketing-attribution-conversion-governance-pack",
     "immutable": true,

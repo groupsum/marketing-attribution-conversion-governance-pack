@@ -168,7 +168,7 @@
     "title": "Attribution Consumes Canonical Ad Measurement Results",
     "filename": "ADR-1011-attribution-consumes-canonical-ad-measurement-results.yaml",
     "target_path": ".ssot/adr/ADR-1011-attribution-consumes-canonical-ad-measurement-results.yaml",
-    "sha256": "1f1b80dfb05dd506132215ad280bcd7cd8df6970208bbfe24bec208f9b9db28e",
+    "sha256": "3267ab2403a9e6e23bc48c768155ce2dc430e6e069b120e81c0e8155e56bbcf0",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:marketing-attribution-conversion-governance-pack",
     "immutable": true,
